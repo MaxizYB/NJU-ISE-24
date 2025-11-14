@@ -1,6 +1,7 @@
 # DFS & BFS
 
-下面按照知识点进行讲解，并提供对应 LeetCode 题目与题目链接，以及常用的 C++ 示例模板代码（可直接使用）。
+[截图提交地址](https://table.nju.edu.cn/dtable/forms/c5ca62c5-e8bf-4255-bfc6-cb327394bb83/)
+
 
 ---
 
@@ -63,32 +64,6 @@ while (!q.empty()) {
 
 ---
 
-## 2. 树的遍历
-
-### 知识点
-
-* DFS：前中后序
-* BFS：层序
-* 应用：路径总和、深度、视图
-
-### C++ 示例：二叉树 DFS
-
-```cpp
-void dfs(TreeNode* root) {
-    if (!root) return;
-    dfs(root->left);
-    dfs(root->right);
-}
-```
-
-### 练习题
-
-* 104. Maximum Depth of Binary Tree  [https://leetcode.com/problems/maximum-depth-of-binary-tree/](https://leetcode.com/problems/maximum-depth-of-binary-tree/)
-* 112. Path Sum  [https://leetcode.com/problems/path-sum/](https://leetcode.com/problems/path-sum/)
-* 113. Path Sum II  [https://leetcode.com/problems/path-sum-ii/](https://leetcode.com/problems/path-sum-ii/)
-* 199. Binary Tree Right Side View  [https://leetcode.com/problems/binary-tree-right-side-view/](https://leetcode.com/problems/binary-tree-right-side-view/)
-
----
 
 ## 3. 网格搜索（Grid Search）
 
