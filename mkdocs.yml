@@ -1,6 +1,7 @@
 site_name: OPEN-ISE-24-4
 site_url: https://MaxizYB.github.io/NJU-ISE-24/
 markdown_extensions:
+  - admonition
   - attr_list
   - codehilite:
       guess_lang: false
