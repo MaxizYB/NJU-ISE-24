@@ -8,6 +8,9 @@
 
 我们将按打卡的次数和提交时间为积极完成的同学最终发放奖品。
 
+!!! note
+    提交截图：力扣个人主页-所有提交记录-相关题目完成截图，只用一张即可
+
 ## 11.15-图及其遍历（BFS & DFS）
 
 - [DFS-有向无环图中一个节点的所有祖先](https://leetcode.cn/problems/all-ancestors-of-a-node-in-a-directed-acyclic-graph/description/)
