@@ -18,7 +18,7 @@
 - [BFS-拆分合并数组](https://leetcode.cn/problems/split-and-merge-array-transformation/description/)
 - [拓扑排序-找到最终的安全状态](https://leetcode.cn/problems/find-eventual-safe-states/description/)
   
-——>[提交链接](https://table.nju.edu.cn/dtable/forms/c5ca62c5-e8bf-4255-bfc6-cb327394bb83/)
+——>[提交链接]()
 
 ——>截止时间：11.23 24：00
 
