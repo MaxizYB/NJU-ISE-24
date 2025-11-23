@@ -13,6 +13,8 @@ markdown_extensions:
   - pymdownx.highlight
   - pymdownx.tasklist:
       custom_checkbox: true
+  - pymdownx.arithmatex:
+      generic: true
 theme:
   name: material
   custom_dir: overrides
@@ -39,3 +41,4 @@ theme:
       accent: deep purple
 extra_javascript:
   - https://utteranc.es/client.js
+  - https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
