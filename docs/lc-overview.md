@@ -20,6 +20,8 @@
   
 ——>[提交链接](https://table.nju.edu.cn/dtable/forms/c5ca62c5-e8bf-4255-bfc6-cb327394bb83/)
 
+[题解已发布](https://maxizyb.github.io/NJU-ISE-24/lc-bfs-dfs/)
+
 
 ## 11.24-最小生成树与图的应用
 
