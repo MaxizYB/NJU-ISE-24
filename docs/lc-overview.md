@@ -20,15 +20,12 @@
   
 ——>[提交链接](https://table.nju.edu.cn/dtable/forms/c5ca62c5-e8bf-4255-bfc6-cb327394bb83/)
 
-——>截止时间：11.23 24：00
 
 ## 11.24-最小生成树与图的应用
 
 - [最小生成树-连接所有点的最小费用](https://leetcode.cn/problems/min-cost-to-connect-all-points/description/)
 - [Tarjan算法-集群内的关键链接](https://leetcode.cn/problems/critical-connections-in-a-network/description/)
-- [最短路算法-到达最后一个房间的最短时间](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-i/description/)
 - [拓扑排序-最小高度树](https://leetcode.cn/problems/minimum-height-trees/description/)
 
 [提交链接](https://table.nju.edu.cn/dtable/forms/637d9774-ada4-447c-aa90-e9c3b8e01a91/)
 
-截止时间：11.30 24：00
