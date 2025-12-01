@@ -31,3 +31,10 @@
 
 [提交链接](https://table.nju.edu.cn/dtable/forms/637d9774-ada4-447c-aa90-e9c3b8e01a91/)
 
+## 12.1-最短路
+
+- [到达最后一个房间的最短时间](https://leetcode.cn/problems/find-minimum-time-to-reach-last-room-i/description/)
+- [转换字符串的最小成本](https://leetcode.cn/problems/minimum-cost-to-convert-string-i/description/)
+- [概率最大的路径](https://leetcode.cn/problems/path-with-maximum-probability/description/)
+
+[提交链接](https://table.nju.edu.cn/dtable/forms/dae29e66-fcaa-4845-88d2-d7fcbbd8090b/)
