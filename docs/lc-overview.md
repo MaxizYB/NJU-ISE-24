@@ -38,3 +38,11 @@
 - [概率最大的路径](https://leetcode.cn/problems/path-with-maximum-probability/description/)
 
 [提交链接](https://table.nju.edu.cn/dtable/forms/dae29e66-fcaa-4845-88d2-d7fcbbd8090b/)
+
+## 12.8-贪心&动态规划
+
+- [执行操作后不同元素的最大数量](https://leetcode.cn/problems/maximum-number-of-distinct-elements-after-operations/description/)
+- [使数组非递减的最少除法操作次数](https://leetcode.cn/problems/minimum-division-operations-to-make-array-non-decreasing/description/)
+- [一和零](https://leetcode.cn/problems/ones-and-zeroes/description/)
+
+[提交链接](https://table.nju.edu.cn/dtable/forms/f690d482-ce52-45c1-8548-b86295627488/)
