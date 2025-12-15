@@ -46,3 +46,6 @@
 - [一和零](https://leetcode.cn/problems/ones-and-zeroes/description/)
 
 [提交链接](https://table.nju.edu.cn/dtable/forms/f690d482-ce52-45c1-8548-b86295627488/)
+
+!!! note
+    临近期末，为了留给大家更多复习时间，周练习将暂停~
