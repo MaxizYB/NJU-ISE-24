@@ -15,6 +15,15 @@ markdown_extensions:
       custom_checkbox: true
   - pymdownx.arithmatex:
       generic: true
+  # 添加以下扩展来增强列表支持
+  - toc:
+      permalink: true
+  - def_list          # 支持定义列表
+  - pymdownx.details   # 支持详情折叠
+  # - pymdownx.tabbed    # 支持标签页
+  - pymdownx.caret     # 支持上标
+  - pymdownx.mark      # 支持高亮
+  - pymdownx.tilde     # 支持删除线
 theme:
   name: material
   custom_dir: overrides
@@ -42,3 +51,20 @@ theme:
 extra_javascript:
   - https://utteranc.es/client.js
   - https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML
+nav:
+  - 首页: index.md
+  - 力扣打卡:
+    - 题目: lc-overview.md
+    - 题解:
+      - BFS / DFS: lc-bfs-dfs.md
+      - 最小生成树: lc-MST.md
+  - 课程复习资料:
+    - 计算机组成:
+      - 概览: jz-overview.md
+      - 第五章: jz-5.md
+      - 第六章: jz-6.md
+      - 第七章: jz-7.md
+    - C++高级程序设计:
+      - 概览: gc-overview.md
+      - 知识整理: gc-knowledge.md
+      
