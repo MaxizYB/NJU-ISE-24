@@ -64,7 +64,10 @@ nav:
       - 第五章: jz-5.md
       - 第六章: jz-6.md
       - 第七章: jz-7.md
+      - 第八章: jz-8.md
     - C++高级程序设计:
       - 概览: gc-overview.md
       - 知识整理: gc-knowledge.md
+    - 自动化测试:
+      - 知识整理: st.md
       
