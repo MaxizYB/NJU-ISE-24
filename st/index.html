@@ -1,0 +1,3023 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://MaxizYB.github.io/NJU-ISE-24/st/">
+      
+      
+        <link rel="prev" href="../gc-knowledge/">
+      
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>知识整理 - OPEN-ISE-24-4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OPEN-ISE-24-4" class="md-header__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPEN-ISE-24-4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              知识整理
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lc-overview/" class="md-tabs__link">
+          
+  
+  
+  力扣打卡
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../jz-overview/" class="md-tabs__link">
+          
+  
+  
+  课程复习资料
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OPEN-ISE-24-4" class="md-nav__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPEN-ISE-24-4
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    力扣打卡
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    力扣打卡
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题目
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题解
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    题解
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-bfs-dfs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BFS / DFS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-MST/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    最小生成树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程复习资料
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    课程复习资料
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机组成
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机组成
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第七章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第八章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++高级程序设计
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++高级程序设计
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-knowledge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化测试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    自动化测试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、软件测试基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、软件测试基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 测试基础要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 常用测试分类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 测试分析框架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 不同程序下的测试数据（文档）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、BUG理论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、BUG理论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. PIE模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 引导性随机测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 软件等价类划分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 划分随机测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 变异缺陷
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 变异测试的技术
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 逻辑测试基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、组合测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、组合测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 组合测试生成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、故障假设测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、故障假设测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 边界故障假设
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 白盒边界故障假设
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、图分析测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、图分析测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 图基础概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cfg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 控制流图（CFG）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-dfg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 数据流图（DFG）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 事件流图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-l-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. L-路径测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 主路径测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 基本路径测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 数据流测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 逻辑覆盖
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、开发者测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、开发者测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 单元测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 接口测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 集成测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 多样性验证测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 故障假设开发者测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、功能测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、功能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 传统功能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多样性功能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 故障假设功能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、性能测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、性能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多样性性能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 故障假设性能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、适配测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、适配测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 信创适配测试的关注点及原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 多样性适配测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 故障假设适配测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 适配测试重点方向
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、模糊测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、模糊测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 整体流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 关键设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、测试用例优先级
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、软件测试基础
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、软件测试基础">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 测试基础要素
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 常用测试分类
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 测试分析框架
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 不同程序下的测试数据（文档）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#bug" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、BUG理论
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、BUG理论">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-pie" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. PIE模型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 引导性随机测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 软件等价类划分
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 划分随机测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 变异缺陷
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 变异测试的技术
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 逻辑测试基础
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、组合测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、组合测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 组合测试生成
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、故障假设测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、故障假设测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 边界故障假设
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 白盒边界故障假设
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、图分析测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、图分析测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 图基础概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-cfg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 控制流图（CFG）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-dfg" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 数据流图（DFG）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 事件流图
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-l-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. L-路径测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#6_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        6. 主路径测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#7_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        7. 基本路径测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        8. 数据流测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        9. 逻辑覆盖
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、开发者测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、开发者测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 单元测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 接口测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 集成测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 多样性验证测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 故障假设开发者测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、功能测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、功能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 传统功能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多样性功能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 故障假设功能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、性能测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="八、性能测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多样性性能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 故障假设性能测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        九、适配测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="九、适配测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 信创适配测试的关注点及原则
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 多样性适配测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 故障假设适配测试
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. 适配测试重点方向
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十、模糊测试
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="十、模糊测试">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 整体流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 关键设计
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        十一、测试用例优先级
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">软件测试复习笔记<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">一、软件测试基础<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 测试基础要素<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>测试用例：包含测试输入、执行条件、预期结果和实际结果的文档化描述</li>
+<li>测试报告：包含测试概要、测试用例执行情况、缺陷统计和分析结论四部分</li>
+<li>软件测试标准：遵循ISO/IEC/IEEE 29119软件测试系列标准</li>
+</ol>
+<h3 id="2">2. 常用测试分类<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>测试层级</th>
+<th>具体类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>单元测试</td>
+<td>针对软件最小功能单元的测试</td>
+</tr>
+<tr>
+<td>集成测试</td>
+<td>验证组件间协作能力的测试</td>
+</tr>
+<tr>
+<td>系统测试</td>
+<td>对完整系统功能、性能等的全面测试</td>
+</tr>
+<tr>
+<td>验收测试</td>
+<td>确认软件是否满足用户需求的测试</td>
+</tr>
+</tbody>
+</table>
+<table>
+<thead>
+<tr>
+<th>测试维度</th>
+<th>具体类型</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>功能测试</td>
+<td>验证软件功能是否符合需求</td>
+</tr>
+<tr>
+<td>性能测试</td>
+<td>测试软件响应速度、并发能力等</td>
+</tr>
+<tr>
+<td>安全测试</td>
+<td>检测软件安全漏洞、数据保护能力</td>
+</tr>
+<tr>
+<td>兼容性测试</td>
+<td>验证软件在不同环境下的运行情况</td>
+</tr>
+<tr>
+<td>易用性测试</td>
+<td>评估用户使用软件的便捷性</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3">3. 测试分析框架<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<p>测试分析框架是一套用于指导测试过程中分析需求、设计用例、评估结果的结构化方法，核心包含需求分析、风险识别、测试范围界定、用例设计依据、结果评估指标等模块，用于确保测试的全面性和针对性。</p>
+<h3 id="4">4. 不同程序下的测试数据（文档）<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<p>测试数据需根据程序类型、功能场景设计，包括有效数据、无效数据、边界数据等，文档需记录数据来源、用途、预期结果，确保测试可复现。例如，对于一个登录程序，需要设计有效用户名密码、无效用户名、错误密码、边界长度字符串等测试数据。</p>
+<h2 id="bug">二、BUG理论<a class="headerlink" href="#bug" title="Permanent link">&para;</a></h2>
+<h3 id="1-pie">1. PIE模型<a class="headerlink" href="#1-pie" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>Defect（缺陷）</strong>：静态存在于程序中的问题，是错误的根源</li>
+<li>
+<p><strong>故障连续性</strong>：选择5个测试距离较远的用例，距离计算方法包括：</p>
+</li>
+<li>
+<p>欧氏距离：√Σ(xi-yi)²</p>
+</li>
+<li>曼哈顿距离：Σ|xi-yi|</li>
+<li>余弦距离：1 - (x·y)/(|x|·|y|)</li>
+<li>汉明距离：两个等长字符串对应位置不同字符的个数</li>
+<li>编辑距离：将一个字符串转换为另一个字符串所需的最少操作次数</li>
+</ol>
+<h3 id="2_1">2. 引导性随机测试<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>核心</strong>：选择随机测试生成方法，快速生成覆盖程序路径的测试用例</li>
+<li>
+<p><strong>相关技术</strong>：</p>
+</li>
+<li>
+<p>基于执行轨迹的测试方法</p>
+</li>
+<li>符号求解：通过变量符号化分析程序路径，但存在状态爆炸问题（变量增多时路径数量呈指数增长）</li>
+</ol>
+<h3 id="3_1">3. 软件等价类划分<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：等价类指输入域的一个子集，该子集中各个输入对于揭露软件中的缺陷所起作用等价</li>
+<li>
+<p><strong>划分思路</strong>：</p>
+</li>
+<li>
+<p>确定输入和输出范围</p>
+</li>
+<li>划分等价类并选择代表性测试用例</li>
+<li>
+<p><strong>等价类分类</strong>：</p>
+</li>
+<li>
+<p><strong>输入等价类</strong>：</p>
+<ul>
+<li>有效等价类：符合需求的输入（如年龄输入18-60）</li>
+<li>无效等价类：不符合需求的输入（如年龄输入-5或200）</li>
+<li>
+<p><strong>输出等价类</strong>：</p>
+</li>
+<li>
+<p>有效等价类：符合预期的输出</p>
+</li>
+<li>无效等价类：不符合预期的输出</li>
+<li>未指定等价类：需求未明确说明的输出</li>
+<li><strong>等价类测试策略</strong>：</li>
+</ul>
+</li>
+<li>
+<p><strong>弱一般等价类测试</strong>：取各变量有效等价类的单个代表值</p>
+</li>
+<li><strong>强一般等价类测试</strong>：覆盖所有有效等价类的笛卡尔积组合</li>
+<li><strong>弱健壮性测试</strong>：单缺陷原则，每次仅引入一个无效等价类</li>
+<li><strong>强健壮性测试</strong>：覆盖所有有效与无效等价类的组合</li>
+</ol>
+<h3 id="4_1">4. 划分随机测试<a class="headerlink" href="#4_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：将输入域划分为K个子域，每个子域的选择概率为Pi</li>
+<li>
+<p><strong>相关度量</strong>：</p>
+</li>
+<li>
+<p><strong>P-度量</strong>：测试集至少包含一个子域测试用例的概率</p>
+<ul>
+<li>示例：若输入域划分为3个子域，每个子域Pi=1/3，简单随机测试中P(a)=1-(2/3)^n</li>
+</ul>
+</li>
+<li><strong>简单随机</strong>：Pi=1/K（K为子域总数）</li>
+<li><strong>E-度量</strong>：测试集触发软件故障的期望次数，E=n×p<ul>
+<li>示例：若p=0.05，n=20，则E=1，即期望触发1次故障</li>
+</ul>
+</li>
+<li><strong>F-度量</strong>：检测缺陷的概率度量，遵循几何分布<ul>
+<li>几何分布公式：P(X=k)=(1-p)^(k-1)×p</li>
+</ul>
+</li>
+<li><strong>平均无故障时间（MTTF）</strong>：总运行时间/故障次数</li>
+</ol>
+<h3 id="5">5. 变异缺陷<a class="headerlink" href="#5" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>相关假设</strong>：</p>
+</li>
+<li>
+<p><strong>熟练程序员假设</strong>：熟练程序员编写的代码缺陷较少，且多为简单缺陷</p>
+</li>
+<li><strong>耦合效应假设</strong>：检测简单缺陷的测试用例也能检测出复杂缺陷</li>
+<li><strong>变异体</strong>：对原程序按照合法语法规则进行微小修改后的版本</li>
+<li><strong>变异体检测</strong>：通过执行测试用例，对比原程序与变异体的输出结果</li>
+<li><strong>变异分数</strong>：杀死的变异体数量/总变异体数量</li>
+<li>
+<p><strong>变异算子</strong>：</p>
+</li>
+<li>
+<p>值变异：修改变量赋值</p>
+</li>
+<li>语句变异：增删改语句</li>
+<li>决策变异：修改判断条件</li>
+<li>
+<p><strong>杀死变异体</strong>：</p>
+</li>
+<li>
+<p><strong>强杀死</strong>：原程序与变异体的中间执行结果和最终输出均不同</p>
+</li>
+<li><strong>弱杀死</strong>：仅最终输出不同</li>
+</ol>
+<h3 id="6">6. 变异测试的技术<a class="headerlink" href="#6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>变异选择优化流程</strong>：生成变异体→执行测试用例→判断是否杀死变异体→保留有效变异体</li>
+<li>
+<p><strong>变异体选择策略</strong>：</p>
+</li>
+<li>
+<p><strong>内部变异体随机测试</strong>：随机选择部分内部变异体进行测试</p>
+</li>
+<li><strong>变异体聚类抽样</strong>：将相似变异体聚类，从每个聚类中抽样测试</li>
+</ol>
+<h3 id="7">7. 逻辑测试基础<a class="headerlink" href="#7" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>逻辑故障假设</strong>：程序中因逻辑错误导致的功能异常</li>
+<li>
+<p><strong>逻辑故障分类</strong>：</p>
+</li>
+<li>
+<p><strong>0/1固化故障</strong>：变量值被错误地固定为0或1</p>
+</li>
+<li><strong>文字非故障</strong>：逻辑表达式中变量的否定符号使用错误</li>
+<li><strong>逻辑测试策略</strong>：基于逻辑表达式的覆盖准则设计测试用例</li>
+<li><strong>逻辑故障与逻辑结构的关系</strong>：逻辑结构越复杂，逻辑故障的隐蔽性越强</li>
+</ol>
+<h2 id="_3">三、组合测试<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 基本概念<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>核心要素</strong>：</p>
+</li>
+<li>
+<p>参数（输入变量）</p>
+</li>
+<li>取值（每个参数的可选值）</li>
+<li>组合强度（k-因素组合）：k=2时为两两组合，k=3时为三三组合</li>
+<li><strong>示例</strong>：若参数A（取值1、2）、B（取值a、b），k=2，则需覆盖组合（1,a）、（1,b）、（2,a）、（2,b）</li>
+</ol>
+<h3 id="2_2">2. 组合测试生成<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>覆盖集定义</strong>：CA(N;k,m,v)</p>
+</li>
+<li>
+<p>N为测试用例数量（行数）</p>
+</li>
+<li>k为组合强度</li>
+<li>m为参数数量</li>
+<li>v为每个参数的取值数</li>
+<li>示例：CA(4;2,2,2)表示4个测试用例，2因素组合，2个参数，每个参数2个取值</li>
+<li>
+<p><strong>贪心生成算法</strong>：</p>
+</li>
+<li>
+<p><strong>目标</strong>：生成最小的测试用例集覆盖所有k-组合</p>
+</li>
+<li><strong>流程</strong>：初始化未覆盖集U→选择覆盖U中最多未覆盖组合的测试用例→更新U→重复直至U为空</li>
+</ol>
+<h2 id="_4">四、故障假设测试<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. 边界故障假设<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>正向边界故障假设</strong>：U∈[min, max-1]，检测最大值边界的异常</li>
+<li><strong>负向边界故障假设</strong>：U∈[min+1, max+1]，检测最小值和最大值外的边界异常</li>
+<li><strong>完整边界故障假设</strong>：U∈[min-1, max+1]，覆盖六个边界点</li>
+<li><strong>示例</strong>：若参数取值范围为[10, 20]，则边界测试用例为9、10、11、19、20、21</li>
+</ol>
+<h3 id="2_3">2. 白盒边界故障假设<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>白盒边界类型</strong>：</p>
+</li>
+<li>
+<p>循环边界（循环次数的最小值、最大值）</p>
+</li>
+<li>分支判定边界（判断条件的临界值）</li>
+<li>数据结构边界（数组的下标边界、字符串的长度边界）</li>
+<li><strong>边界取值</strong>：min-1、min、min+1、max-1、max、max+1</li>
+</ol>
+<h2 id="_5">五、图分析测试<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="1_3">1. 图基础概念<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>测试图定义</strong>：G=(V,E,L)</p>
+</li>
+<li>
+<p>V为顶点集（包含起始顶点S、终结顶点T）</p>
+</li>
+<li>E为边集（表示顶点间的转移关系）</li>
+<li>L为边的标签（表示转移条件或操作）</li>
+</ol>
+<h3 id="2-cfg">2. 控制流图（CFG）<a class="headerlink" href="#2-cfg" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：以程序语句为节点，以语句间的执行顺序为边的图</li>
+<li>
+<p><strong>生成方法</strong>：</p>
+</li>
+<li>
+<p>识别程序中的基本块（连续执行的语句块，无分支）</p>
+</li>
+<li>以基本块为节点</li>
+<li>按照语句执行顺序连接节点，形成边</li>
+</ol>
+<h3 id="3-dfg">3. 数据流图（DFG）<a class="headerlink" href="#3-dfg" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>节点含义</strong>：代表对数据对象的定义操作（赋值）或引用操作（取值）</li>
+</ol>
+<h3 id="4_2">4. 事件流图<a class="headerlink" href="#4_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：包含事件集和事件间的转移关系，节点表示事件，边表示事件的触发顺序</li>
+</ol>
+<h3 id="5-l-">5. L-路径测试<a class="headerlink" href="#5-l-" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>核心思想</strong>：将程序转化为图，通过覆盖准则约束测试用例需覆盖的路径结构</li>
+<li>
+<p><strong>覆盖准则</strong>：</p>
+</li>
+<li>
+<p><strong>VC（顶点覆盖）</strong>：覆盖所有顶点</p>
+</li>
+<li><strong>EC（边覆盖）</strong>：覆盖所有边</li>
+<li><strong>LC（长度覆盖）</strong>：覆盖所有长度为L的路径</li>
+<li><strong>覆盖层级关系</strong>：VC &lt; EC &lt; LC</li>
+</ol>
+<h3 id="6_1">6. 主路径测试<a class="headerlink" href="#6_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>相关概念</strong>：</p>
+</li>
+<li>
+<p><strong>简单路径</strong>：路径中没有重复顶点的路径</p>
+</li>
+<li><strong>主路径</strong>：极大化简单路径（无法在不重复顶点的前提下延长的简单路径）</li>
+<li><strong>主路径覆盖准则</strong>：覆盖所有主路径</li>
+</ol>
+<h3 id="7_1">7. 基本路径测试<a class="headerlink" href="#7_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>基本路径</strong>：线性独立的路径集合</li>
+<li><strong>环路复杂度（V(G)）</strong>：V(G)=E - V + 2（E为边数，V为顶点数）</li>
+<li><strong>基本路径生成方法</strong>：图元素测试法</li>
+</ol>
+<h3 id="8">8. 数据流测试<a class="headerlink" href="#8" title="Permanent link">&para;</a></h3>
+<ol>
+<li>
+<p><strong>核心概念</strong>：</p>
+</li>
+<li>
+<p><strong>定义（def）</strong>：程序中变量值被赋值或更新的语句</p>
+</li>
+<li><strong>引用（use）</strong>：程序中变量值被读取或使用的语句</li>
+<li><strong>定义清晰路径（DU路径）</strong>：变量从定义到引用的路径中，没有被重新定义</li>
+<li>
+<p><strong>覆盖准则</strong>：</p>
+</li>
+<li>
+<p><strong>ADC（定义覆盖）</strong>：覆盖所有变量的定义</p>
+</li>
+<li><strong>AUC（引用覆盖）</strong>：覆盖所有变量的引用</li>
+<li><strong>ADUPC（定义-引用路径覆盖）</strong>：覆盖所有变量的定义-引用路径</li>
+</ol>
+<h3 id="9">9. 逻辑覆盖<a class="headerlink" href="#9" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>语句覆盖（SC）</strong>：设计测试用例，使程序中每个语句至少执行一次</li>
+<li><strong>判定覆盖（DC）</strong>：设计测试用例，使程序中每个判断条件的真假值至少执行一次</li>
+<li><strong>条件覆盖（CC）</strong>：设计测试用例，使判断条件中的每个子条件的真假值至少执行一次</li>
+<li><strong>判定-条件覆盖（DCC）</strong>：同时满足判定覆盖和条件覆盖</li>
+<li><strong>修正条件判定覆盖（MCDC）</strong>：每个子条件的变化独立影响判断条件的结果</li>
+</ol>
+<h2 id="_6">六、开发者测试<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<h3 id="1_4">1. 单元测试<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>测试对象</strong>：软件的最小功能单元（如函数、方法、类）</li>
+<li><strong>测试重点</strong>：模块内部的逻辑、接口、数据结构</li>
+<li>
+<p><strong>依赖隔离技术</strong>：</p>
+</li>
+<li>
+<p><strong>Mock</strong>：模拟依赖模块的行为，返回预设结果</p>
+</li>
+<li><strong>Stub</strong>：简化依赖模块的实现，仅提供必要的接口</li>
+<li><strong>单元测试原则</strong>：尽早测试、自动化、简单性、高质量</li>
+</ol>
+<h3 id="2_4">2. 接口测试<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：针对软件系统中接口（如API）的测试，验证接口的功能、性能、安全性、兼容性</li>
+<li>
+<p><strong>测试内容</strong>：</p>
+</li>
+<li>
+<p>API性能测试：响应时间、并发处理能力、吞吐量</p>
+</li>
+<li>API安全性测试：权限控制、数据加密、防注入攻击</li>
+<li>API兼容性测试：不同版本、不同环境下的兼容性</li>
+<li>接口监视：实时监控接口运行状态</li>
+<li>接口覆盖：覆盖所有参数组合、请求方法</li>
+<li>响应状态码：验证状态码是否符合规范</li>
+<li>多API组合测试：测试接口协同工作</li>
+<li>正向/负向测试：合法请求vs非法请求</li>
+<li>持续集成（CI）：集成到CI流程中</li>
+</ol>
+<h3 id="3_2">3. 集成测试<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>测试时机</strong>：单元测试完成后</li>
+<li><strong>测试目的</strong>：验证软件组件间的协同工作能力</li>
+<li>
+<p><strong>集成方法</strong>：</p>
+</li>
+<li>
+<p><strong>自顶向下集成</strong>：从顶层组件开始，逐步集成下层组件（需使用Stub）</p>
+</li>
+<li><strong>自底向上集成</strong>：从底层组件开始，逐步集成上层组件（需使用Mock）</li>
+<li><strong>混合集成</strong>：结合自顶向下和自底向上</li>
+<li><strong>一次性集成</strong>：所有组件开发完成后一次性集成</li>
+</ol>
+<h3 id="4_3">4. 多样性验证测试<a class="headerlink" href="#4_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>核心</strong>：基于代码多样性设计测试用例，包括变异测试、随机测试</li>
+<li><strong>测试优势</strong>：覆盖更多潜在缺陷，避免单一测试方法的局限性</li>
+<li><strong>测试粒度</strong>：方法级、模块级、系统级</li>
+</ol>
+<h3 id="5_1">5. 故障假设开发者测试<a class="headerlink" href="#5_1" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>边界定义</strong>：明确被测对象的输入、输出、逻辑边界</li>
+<li><strong>变异修改</strong>：修改程序代码中的变量值、语句、参数、返回值等</li>
+<li><strong>测试分类器</strong>：T×P（测试用例集与程序版本的组合）</li>
+</ol>
+<h2 id="_7">七、功能测试<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h2>
+<h3 id="1_5">1. 传统功能测试<a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>测试流程</strong>：明确功能需求→设计测试用例→执行测试用例→验证测试结果</li>
+</ol>
+<h3 id="2_5">2. 多样性功能测试<a class="headerlink" href="#2_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>等价类划分</strong>：确保划分的等价类完备（覆盖所有输入场景）、无冗余</li>
+<li><strong>结果分析</strong>：通过分析测试结果，评估功能覆盖度和缺陷分布</li>
+<li><strong>测试评估</strong>：使用覆盖率等指标评估测试效果</li>
+</ol>
+<h3 id="3_3">3. 故障假设功能测试<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>测试流程</strong>：制定测试规划→设计故障变异算子→执行测试→分析测试结果</li>
+<li><strong>变异强度</strong>：根据测试需求调整变异的复杂程度</li>
+</ol>
+<h2 id="_8">八、性能测试<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="1_6">1. 基本概念<a class="headerlink" href="#1_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：测试软件在特定条件下的性能指标</li>
+<li>
+<p><strong>常见类型</strong>：</p>
+</li>
+<li>
+<p><strong>并发测试</strong>：测试软件在多用户同时操作下的性能</p>
+</li>
+<li><strong>负载测试</strong>：逐步增加负载，测试软件的性能变化趋势</li>
+<li><strong>压力测试</strong>：超过设计负载的极限测试</li>
+</ol>
+<h3 id="2_6">2. 多样性性能测试<a class="headerlink" href="#2_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>测试变量</strong>：负载强度、网络条件、软硬件配置</li>
+<li><strong>测试目的</strong>：验证软件在不同环境下的性能稳定性</li>
+</ol>
+<h3 id="3_4">3. 故障假设性能测试<a class="headerlink" href="#3_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>故障变异算子</strong>：模拟性能相关的故障</li>
+<li><strong>测试重点</strong>：软件在故障场景下的性能衰减趋势、恢复能力</li>
+</ol>
+<h2 id="_9">九、适配测试<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h2>
+<h3 id="1_7">1. 基本概念<a class="headerlink" href="#1_7" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：测试软件在不同硬件、操作系统、浏览器、数据库等环境下的兼容性</li>
+<li><strong>核心目标</strong>：确保软件在目标环境中正常运行</li>
+</ol>
+<h3 id="2_7">2. 信创适配测试的关注点及原则<a class="headerlink" href="#2_7" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>关注点</strong>：硬件适配、软件适配、协议适配</li>
+<li><strong>原则</strong>：国产化替代优先、兼容性全面覆盖、性能达标、安全合规</li>
+</ol>
+<h3 id="3_5">3. 多样性适配测试<a class="headerlink" href="#3_5" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>测试环境组合</strong>：不同硬件配置×不同软件版本×不同网络环境</li>
+</ol>
+<h3 id="4_4">4. 故障假设适配测试<a class="headerlink" href="#4_4" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>测试场景</strong>：模拟环境异常，测试软件的适配稳定性</li>
+</ol>
+<h3 id="5_2">5. 适配测试重点方向<a class="headerlink" href="#5_2" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>产品类型</th>
+<th>测试重点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>云平台软件</td>
+<td>虚拟化兼容性、资源调度适配、多租户隔离适配</td>
+</tr>
+<tr>
+<td>应用软件</td>
+<td>操作系统适配、浏览器适配、数据库适配</td>
+</tr>
+<tr>
+<td>外设产品</td>
+<td>硬件驱动适配、数据传输适配</td>
+</tr>
+<tr>
+<td>网络产品（交换机）</td>
+<td>协议适配、带宽适配、多设备互联适配</td>
+</tr>
+<tr>
+<td>存储产品</td>
+<td>接口适配、数据读写适配、兼容性（与服务器、数据库）</td>
+</tr>
+<tr>
+<td>基础软件（操作系统、数据库）</td>
+<td>硬件适配、应用程序适配、API兼容性</td>
+</tr>
+<tr>
+<td>整机产品（移动设备、PC）</td>
+<td>硬件配置适配、系统固件适配、外设连接适配</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_10">十、模糊测试<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h2>
+<h3 id="1_8">1. 基本概念<a class="headerlink" href="#1_8" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>定义</strong>：通过向被测程序（PUT）输入随机、无效、畸形的数据，检测程序是否存在崩溃、漏洞等问题</li>
+<li><strong>三要素</strong>：一套模糊测试工具（Fuzzer）、一个测试目标（PUT）、一个测试循环（Fuzzing Loop）</li>
+</ol>
+<h3 id="2_8">2. 整体流程<a class="headerlink" href="#2_8" title="Permanent link">&para;</a></h3>
+<p>Inputs（输入数据）→ Fuzzer（生成畸形测试用例）→ Execute Program（执行被测程序）→ Crash Triage（崩溃分析）→ Results（输出测试结果）</p>
+<h3 id="3_6">3. 关键设计<a class="headerlink" href="#3_6" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>变异算子设计</strong>：生成畸形数据的规则（如字符替换、长度篡改、格式破坏）</li>
+<li><strong>有效反馈设计</strong>：实时监控程序运行状态（如崩溃、超时、内存溢出）</li>
+</ol>
+<h2 id="_11">十一、测试用例优先级<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>优先级定义</strong>：根据测试用例的缺陷检测概率、执行成本等因素，确定测试用例的执行顺序</li>
+<li>
+<p><strong>优先级算法</strong>：</p>
+</li>
+<li>
+<p><strong>贪心算法</strong>：优先选择覆盖未测试场景最多的测试用例</p>
+</li>
+<li><strong>自适应随机算法</strong>：根据历史测试结果，动态调整测试用例的选择概率</li>
+<li><strong>优先级评估流程</strong>：提取被测程序特征→表示特征向量→分析已有测试用例集→计算测试用例优先级→排序测试用例</li>
+<li>
+<p><strong>评价指标</strong>：</p>
+</li>
+<li>
+<p><strong>缺陷检测率</strong>：优先级高的用例检测到的缺陷数/总缺陷数</p>
+</li>
+<li><strong>平均检测时间</strong>：首次检测到缺陷的平均时间</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div id="utterances_container">
+  <script src="https://utteranc.es/client.js"
+    repo="MaxizYB/NJU-ISE-24"
+    issue-term="pathname"
+    label="comment"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+<div style="text-align: center; margin-top: 20px; padding: 10px;">
+  <div style="display: flex; justify-content: center; gap: 30px; font-size: 13px;">
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>本站访问量：<span id="busuanzi_value_site_pv" style="font-weight: bold; color: #0366d6;"></span>
+    </span>
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>访客数：<span id="busuanzi_value_site_uv" style="font-weight: bold; color: #28a745;"></span>
+    </span>
+  </div>
+</div>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://utteranc.es/client.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

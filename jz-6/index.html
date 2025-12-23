@@ -1,0 +1,2498 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://MaxizYB.github.io/NJU-ISE-24/jz-6/">
+      
+      
+        <link rel="prev" href="../jz-5/">
+      
+      
+        <link rel="next" href="../jz-7/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>第六章 - OPEN-ISE-24-4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OPEN-ISE-24-4" class="md-header__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPEN-ISE-24-4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第六章
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lc-overview/" class="md-tabs__link">
+          
+  
+  
+  力扣打卡
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../jz-overview/" class="md-tabs__link">
+          
+  
+  
+  课程复习资料
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OPEN-ISE-24-4" class="md-nav__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPEN-ISE-24-4
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    力扣打卡
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    力扣打卡
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题目
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题解
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    题解
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-bfs-dfs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BFS / DFS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-MST/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    最小生成树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程复习资料
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    课程复习资料
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机组成
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机组成
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六章
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、指令流水线的基本概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、指令流水线的基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 5段流水线经典结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、指令流水线的功能段划分（MIPS指令）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、指令流水线的功能段划分（MIPS指令）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-r-addsubslt62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. R-型指令（如add、sub、slt）（图6.2）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-i-addiuori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. I-型运算类指令（如addiu、ori）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lw63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. lw指令（加载指令）（图6.3）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-sw64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. sw指令（存储指令）（图6.4）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-beq64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. beq指令（分支指令）（图6.4）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、流水线数据通路基本框架（图6.5）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、流水线数据通路基本框架（图6.5）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心部件与流水段寄存器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 关键说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、流水线冒险及其处理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、流水线冒险及其处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 结构冒险（资源冲突）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 结构冒险（资源冲突）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 数据冒险（数据相关）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 数据冒险（数据相关）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 控制冒险（分支冲突）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 控制冒险（分支冲突）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、流水线的性能指标
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、流水线的性能指标">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-tp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 吞吐率（TP）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 吞吐率（TP）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 加速比（S）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 加速比（S）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 效率（E）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、高级流水线技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、高级流水线技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 超标量流水线
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 超标量流水线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）性能指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-vliw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 超长指令字（VLIW）技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 超长指令字（VLIW）技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 超流水线技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 超流水线技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 三种技术对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、第六章核心考点汇总
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第七章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第八章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++高级程序设计
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++高级程序设计
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-knowledge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化测试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    自动化测试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../st/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、指令流水线的基本概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、指令流水线的基本概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 5段流水线经典结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、指令流水线的功能段划分（MIPS指令）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、指令流水线的功能段划分（MIPS指令）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-r-addsubslt62" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. R-型指令（如add、sub、slt）（图6.2）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-i-addiuori" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. I-型运算类指令（如addiu、ori）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-lw63" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. lw指令（加载指令）（图6.3）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-sw64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. sw指令（存储指令）（图6.4）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#5-beq64" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        5. beq指令（分支指令）（图6.4）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#65" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、流水线数据通路基本框架（图6.5）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、流水线数据通路基本框架（图6.5）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心部件与流水段寄存器
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 关键说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、流水线冒险及其处理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、流水线冒险及其处理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 结构冒险（资源冲突）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 结构冒险（资源冲突）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 数据冒险（数据相关）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 数据冒险（数据相关）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 控制冒险（分支冲突）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 控制冒险（分支冲突）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）解决方法
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、流水线的性能指标
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、流水线的性能指标">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-tp" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 吞吐率（TP）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 吞吐率（TP）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-s" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 加速比（S）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 加速比（S）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）公式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-e" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 效率（E）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、高级流水线技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、高级流水线技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 超标量流水线
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 超标量流水线">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）性能指标
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-vliw" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 超长指令字（VLIW）技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 超长指令字（VLIW）技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 超流水线技术
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 超流水线技术">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 三种技术对比
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、第六章核心考点汇总
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">第六章 指令流水线<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<p><img alt="overview-6" src="../assets/jz-6-table.png" /></p>
+<h2 id="_2">一、指令流水线的基本概念<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 核心定义<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>流水线：将指令执行过程拆分为<strong>k个独立功能段</strong>，每个段在一个时钟周期内完成特定操作，多指令重叠执行</li>
+<li>流水线吞吐率（TP）：单位时间内完成的指令数（核心性能指标）</li>
+<li>流水线加速比（S）：不使用流水线与使用流水线的执行时间之比</li>
+<li>流水线效率（E）：流水线实际利用率（=加速比/段数k）</li>
+</ul>
+<h3 id="2-5">2. 5段流水线经典结构<a class="headerlink" href="#2-5" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>功能段</th>
+<th>英文缩写</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>取指令</td>
+<td>IF</td>
+<td>从主存取出指令，PC+4</td>
+</tr>
+<tr>
+<td>指令译码</td>
+<td>ID</td>
+<td>解析指令操作码，取操作数（寄存器堆读），生成控制信号</td>
+</tr>
+<tr>
+<td>执行运算</td>
+<td>EX</td>
+<td>ALU执行算术/逻辑运算，计算访存地址（lw/sw指令）</td>
+</tr>
+<tr>
+<td>存储器访问</td>
+<td>MEM</td>
+<td>读写数据存储器（lw=读，sw=写，R-型指令无操作）</td>
+</tr>
+<tr>
+<td>写回寄存器</td>
+<td>WB</td>
+<td>将运算结果/访存数据写回通用寄存器（sw指令无操作）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="mips">二、指令流水线的功能段划分（MIPS指令）<a class="headerlink" href="#mips" title="Permanent link">&para;</a></h2>
+<h3 id="1-r-addsubslt62">1. R-型指令（如add、sub、slt）（图6.2）<a class="headerlink" href="#1-r-addsubslt62" title="Permanent link">&para;</a></h3>
+<ul>
+<li>功能段：IF → ID → EX → WB（无MEM段，无需访存）</li>
+<li>关键操作：EX段完成ALU运算，WB段写回寄存器（需溢出检测）</li>
+</ul>
+<h3 id="2-i-addiuori">2. I-型运算类指令（如addiu、ori）<a class="headerlink" href="#2-i-addiuori" title="Permanent link">&para;</a></h3>
+<ul>
+<li>功能段：IF → ID → EX → WB（与R-型一致）</li>
+<li>关键操作：ID段对imm16扩展，EX段完成ALU运算</li>
+</ul>
+<h3 id="3-lw63">3. lw指令（加载指令）（图6.3）<a class="headerlink" href="#3-lw63" title="Permanent link">&para;</a></h3>
+<ul>
+<li>功能段：IF → ID → EX → MEM → WB（需访存+写回）</li>
+<li>关键操作：EX段计算访存地址（基址+符号扩展立即数），MEM段读数据存储器，WB段写回寄存器</li>
+</ul>
+<h3 id="4-sw64">4. sw指令（存储指令）（图6.4）<a class="headerlink" href="#4-sw64" title="Permanent link">&para;</a></h3>
+<ul>
+<li>功能段：IF → ID → EX → MEM（无WB段，无需写回寄存器）</li>
+<li>关键操作：EX段计算访存地址，MEM段写数据存储器</li>
+</ul>
+<h3 id="5-beq64">5. beq指令（分支指令）（图6.4）<a class="headerlink" href="#5-beq64" title="Permanent link">&para;</a></h3>
+<ul>
+<li>功能段：IF → ID → EX → MEM（无WB段，需更新PC）</li>
+<li>关键操作：EX段比较rs/rt（减法运算），MEM段更新PC为分支目标地址</li>
+</ul>
+<h2 id="65">三、流水线数据通路基本框架（图6.5）<a class="headerlink" href="#65" title="Permanent link">&para;</a></h2>
+<h3 id="1_1">1. 核心部件与流水段寄存器<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>流水段寄存器：IF/ID、ID/EX、EX/MEM、MEM/WB（存放前一段的结果，同步数据传输）</li>
+<li>关键控制信号（延续单周期数据通路，新增流水线专用信号）：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>功能段</th>
+<th>控制信号</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>ID</td>
+<td>ExtOp（立即数扩展）、RegDst（目的寄存器选择）</td>
+</tr>
+<tr>
+<td>EX</td>
+<td>ALUop（ALU运算类型）、ALUSrc（B口来源）</td>
+</tr>
+<tr>
+<td>MEM</td>
+<td>MemWr（存储器写使能）、Branch（分支使能）、Jump（跳转使能）</td>
+</tr>
+<tr>
+<td>WB</td>
+<td>MemtoReg（写回来源）、RegWr（寄存器写使能）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2">2. 关键说明<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>流水段寄存器无写使能信号：每个时钟周期自动写入前一段数据</li>
+<li>前两个段（IF、ID）为公共功能段，所有指令共用</li>
+<li>控制信号与指令同步传输：IF/ID寄存器传递指令，ID/EX寄存器传递控制信号</li>
+</ul>
+<h2 id="_3">四、流水线冒险及其处理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. 结构冒险（资源冲突）<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<h4 id="1_3">（1）定义<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>不同指令在同一时钟周期争用同一功能部件（如指令和数据共用主存，lw指令MEM段与后续指令IF段访存冲突）</li>
+</ul>
+<h4 id="2_1">（2）解决方法<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>原理与示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>暂停后续指令</td>
+<td>前一条指令访存时，后续指令停顿1个时钟周期（表5.3）</td>
+</tr>
+<tr>
+<td>分离功能部件</td>
+<td>独立设置指令存储器（I-Cache）和数据存储器（D-Cache），避免访存冲突（主流方案）</td>
+</tr>
+<tr>
+<td>多端口寄存器堆</td>
+<td>寄存器堆设置多个读口/写口，避免读写冲突</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2_2">2. 数据冒险（数据相关）<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<h4 id="1_4">（1）定义<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>后续指令需使用前面指令的结果，但前面指令尚未完成写回（仅存在RAW冲突：写后读，按序执行流水线）</li>
+<li>示例：I1 add R1,R2,R3（写R1）→ I2 sub R4,R1,R5（读R1），I2 ID段读R1时，I1尚未WB段写R1</li>
+</ul>
+<h4 id="2_3">（2）解决方法<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>原理与示例</th>
+<th>适用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>硬件阻塞（Stall）</td>
+<td>暂停后续指令1-2个时钟周期，直到前面指令写回（表5.5）</td>
+<td>所有数据冒险，简单但降低吞吐率</td>
+</tr>
+<tr>
+<td>转发（旁路）技术</td>
+<td>不等待写回寄存器，直接将中间结果（EX/MEM寄存器）转发到ALU输入端（表5.6）</td>
+<td>相邻指令数据相关（如R-型→R-型）</td>
+</tr>
+<tr>
+<td>软件插入NOP指令</td>
+<td>编译器在相关指令间插入空操作，填充等待周期</td>
+<td>无法通过转发解决的冲突（如load-use）</td>
+</tr>
+<tr>
+<td>load-use冒险处理</td>
+<td>lw指令与后续运算指令相关时，插入1条NOP（表5.7），或编译器重排指令顺序</td>
+<td>lw→运算指令（如lw R2,0(R1)→add R3,R2,R4）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3">3. 控制冒险（分支冲突）<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<h4 id="1_5">（1）定义<a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>分支指令（如beq）改变指令执行顺序，导致流水线断流（需等待分支结果才能确定下一条指令地址）</li>
+</ul>
+<h4 id="2_4">（2）解决方法<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>方法</th>
+<th>原理与示例</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>插入NOP指令</td>
+<td>分支指令后插入3条NOP（延迟损失时间片C=3），等待分支结果（表5.8）</td>
+<td>简单易实现</td>
+<td>吞吐率下降明显</td>
+</tr>
+<tr>
+<td>分支预测</td>
+<td>静态预测（如预测不跳转）、动态预测（BHT分支历史表，表6.20）</td>
+<td>预测准确率高（动态预测&gt;90%）</td>
+<td>硬件复杂</td>
+</tr>
+<tr>
+<td>延迟分支（Delayed Branch）</td>
+<td>编译器重排指令，将分支前无关指令填入分支延迟槽（表6.24）</td>
+<td>无需阻塞，提升吞吐率</td>
+<td>依赖编译器优化</td>
+</tr>
+<tr>
+<td>提前计算分支地址</td>
+<td>在ID段计算分支目标地址，EX段判断分支条件，减少延迟</td>
+<td>缩短延迟损失时间片</td>
+<td>需额外硬件支持</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_4">五、流水线的性能指标<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1-tp">1. 吞吐率（TP）<a class="headerlink" href="#1-tp" title="Permanent link">&para;</a></h3>
+<h4 id="1_6">（1）公式<a class="headerlink" href="#1_6" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ TP = \frac{n}{T_A} \]</div>
+<ul>
+<li><span class="arithmatex">\(n\)</span>：指令数；<span class="arithmatex">\(T_A\)</span>：执行n条指令的总时间</li>
+<li>理想情况（连续输入指令）：<span class="arithmatex">\(T_A = (k + n - 1) \Delta t\)</span>（<span class="arithmatex">\(k\)</span>：段数，<span class="arithmatex">\(\Delta t\)</span>：时钟周期）
+[ TP = \frac{n}{(k + n - 1) \Delta t} ]</li>
+<li>最大吞吐率（<span class="arithmatex">\(n \to \infty\)</span>）：<span class="arithmatex">\(TP_{max} = \frac{1}{\Delta t}\)</span>（每个时钟周期完成1条指令）</li>
+</ul>
+<h3 id="2-s">2. 加速比（S）<a class="headerlink" href="#2-s" title="Permanent link">&para;</a></h3>
+<h4 id="1_7">（1）公式<a class="headerlink" href="#1_7" title="Permanent link">&para;</a></h4>
+<div class="arithmatex">\[ S = \frac{T_0}{T_k} \]</div>
+<ul>
+<li><span class="arithmatex">\(T_0\)</span>：顺序执行时间（<span class="arithmatex">\(T_0 = k \cdot n \cdot \Delta t\)</span>）；<span class="arithmatex">\(T_k\)</span>：流水线执行时间
+[ S = \frac{k \cdot n}{k + n - 1} ]</li>
+<li>最大加速比（<span class="arithmatex">\(n \to \infty\)</span>）：<span class="arithmatex">\(S_{max} = k\)</span>（加速比≤段数）</li>
+</ul>
+<h3 id="3-e">3. 效率（E）<a class="headerlink" href="#3-e" title="Permanent link">&para;</a></h3>
+<div class="arithmatex">\[ E = \frac{S}{k} = \frac{n}{k + n - 1} \]</div>
+<ul>
+<li>理想情况（<span class="arithmatex">\(n \to \infty\)</span>）：<span class="arithmatex">\(E_{max} = 1\)</span>（流水线100%利用）</li>
+</ul>
+<h2 id="_5">六、高级流水线技术<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="1_8">1. 超标量流水线<a class="headerlink" href="#1_8" title="Permanent link">&para;</a></h3>
+<h4 id="1_9">（1）核心特点<a class="headerlink" href="#1_9" title="Permanent link">&para;</a></h4>
+<ul>
+<li>动态多发射技术：每个时钟周期发射≥2条独立指令（如2发射、4发射）</li>
+<li>需配置多个功能部件（ALU、寄存器堆多端口、多Cache）</li>
+<li>指令可乱序执行（结合动态分支预测、寄存器重命名）</li>
+</ul>
+<h4 id="2_5">（2）性能指标<a class="headerlink" href="#2_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>CPI &lt; 1（如2发射流水线，理想CPI=0.5）</li>
+<li>吞吐率=发射宽度×基础吞吐率（如2发射，<span class="arithmatex">\(TP_{max} = \frac{2}{\Delta t}\)</span>）</li>
+</ul>
+<h3 id="2-vliw">2. 超长指令字（VLIW）技术<a class="headerlink" href="#2-vliw" title="Permanent link">&para;</a></h3>
+<h4 id="1_10">（1）核心特点<a class="headerlink" href="#1_10" title="Permanent link">&para;</a></h4>
+<ul>
+<li>静态多发射技术：编译器将多条并行指令组合成一条超长指令（数百位）</li>
+<li>硬件简单（无动态调度逻辑），依赖编译器优化（挖掘指令级并行）</li>
+<li>缺点：指令长度固定，灵活性差，兼容性差</li>
+</ul>
+<h3 id="3_1">3. 超流水线技术<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<h4 id="1_11">（1）核心特点<a class="headerlink" href="#1_11" title="Permanent link">&para;</a></h4>
+<ul>
+<li>细分功能段（如将5段拆分为10段），缩短时钟周期（<span class="arithmatex">\(\Delta t\)</span>减小）</li>
+<li>每个时钟周期仍发射1条指令，CPI=1，但主频更高</li>
+<li>缺点：流水段寄存器开销增大，分支延迟损失更明显</li>
+</ul>
+<h3 id="4">4. 三种技术对比<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>技术类型</th>
+<th>发射方式</th>
+<th>CPI</th>
+<th>硬件复杂度</th>
+<th>依赖优化</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>超标量</td>
+<td>动态多发射</td>
+<td>&lt;1</td>
+<td>高</td>
+<td>硬件动态调度</td>
+</tr>
+<tr>
+<td>超长指令字</td>
+<td>静态多发射</td>
+<td>&lt;1</td>
+<td>低</td>
+<td>编译器静态调度</td>
+</tr>
+<tr>
+<td>超流水线</td>
+<td>单发射</td>
+<td>=1</td>
+<td>中</td>
+<td>功能段细分</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">七、第六章核心考点汇总<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>基本概念类</strong>：流水线功能段划分、流水段寄存器的作用、三种冒险的定义</li>
+<li><strong>原理与计算类</strong>：流水线吞吐率/加速比计算、最大吞吐率/加速比推导</li>
+<li><strong>设计与处理类</strong>：三种冒险的解决方法（尤其是转发技术、分支预测、延迟分支）</li>
+<li><strong>命题高频点</strong>：数据冒险的RAW冲突、结构冒险的访存冲突解决、超标量流水线的CPI特性</li>
+</ol>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div id="utterances_container">
+  <script src="https://utteranc.es/client.js"
+    repo="MaxizYB/NJU-ISE-24"
+    issue-term="pathname"
+    label="comment"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+<div style="text-align: center; margin-top: 20px; padding: 10px;">
+  <div style="display: flex; justify-content: center; gap: 30px; font-size: 13px;">
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>本站访问量：<span id="busuanzi_value_site_pv" style="font-weight: bold; color: #0366d6;"></span>
+    </span>
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>访客数：<span id="busuanzi_value_site_uv" style="font-weight: bold; color: #28a745;"></span>
+    </span>
+  </div>
+</div>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://utteranc.es/client.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

@@ -1,0 +1,3058 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://MaxizYB.github.io/NJU-ISE-24/jz-4/">
+      
+      
+        <link rel="prev" href="../jz-overview/">
+      
+      
+        <link rel="next" href="../jz-5/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>第四章 - OPEN-ISE-24-4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#_1" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OPEN-ISE-24-4" class="md-header__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPEN-ISE-24-4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第四章
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lc-overview/" class="md-tabs__link">
+          
+  
+  
+  力扣打卡
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../jz-overview/" class="md-tabs__link">
+          
+  
+  
+  课程复习资料
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OPEN-ISE-24-4" class="md-nav__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPEN-ISE-24-4
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    力扣打卡
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    力扣打卡
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题目
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题解
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    题解
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-bfs-dfs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BFS / DFS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-MST/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    最小生成树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程复习资料
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    课程复习资料
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机组成
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机组成
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四章
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、指令格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、指令格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 基本格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 指令的基本格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        指令字长
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        指令字结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        指令格式分类（按地址码个数）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 操作码编码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 操作码编码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）固定长度操作码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）扩展操作码（可变长度操作码）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        扩展操作码示例（指令字长16位）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        扩展操作码设计规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 操作类型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 寻址方式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 寻址方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基址寻址与变址寻址的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、异常和中断
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、异常和中断">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-exception" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 异常（Exception，又称例外）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 异常（Exception，又称例外）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分类及特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-interrupt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 中断（Interrupt）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 中断（Interrupt）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        处理流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-isa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. ISA的相关规定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、MIPS指令格式与寻址
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、MIPS指令格式与寻址">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心特性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mips32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. MIPS指令格式（32位）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. MIPS指令格式（32位）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ar-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （a）R-型指令（寄存器型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bi-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （b）I-型指令（立即数型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cj-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （c）J-型指令（跳转型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 大端（文档中“大瑞”修正）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、选择与循环结构汇编
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、选择与循环结构汇编">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ifif-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、选择分支结构（if/if-else）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、选择分支结构（if/if-else）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 单分支if
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 双分支if-else
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whiledo-whilefor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、循环结构（while/do-while/for）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、循环结构（while/do-while/for）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. while循环（先判断后执行）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-do-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. do-while循环（先执行后判断）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. for循环（初始化+判断+更新一体化）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心指令总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、过程调用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、过程调用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 预备知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 预备知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1jal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）jal指令的作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）寄存器规则（MIPS寄存器使用规范）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3mipsstack-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）MIPS栈与栈帧（Stack Frame）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. MIPS过程调用协议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. MIPS过程调用协议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）调用过程P的执行步骤（调用前）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）被调用过程Q的执行步骤（三段式）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="（2）被调用过程Q的执行步骤（三段式）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ① 开始段（栈帧生成、寄存器保存、局部变量申请）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ② 本体段（过程体）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ③ 结尾段（寄存器恢复、栈帧释放、返回）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）栈帧生命周期
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-5/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第七章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第八章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++高级程序设计
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++高级程序设计
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-knowledge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化测试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    自动化测试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../st/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、指令格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、指令格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本格式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 基本格式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#412" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4.1.2 指令的基本格式
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        指令字长
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        指令字结构
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        指令格式分类（按地址码个数）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 操作码编码
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 操作码编码">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）固定长度操作码
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）扩展操作码（可变长度操作码）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        扩展操作码示例（指令字长16位）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        扩展操作码设计规则
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 操作类型
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. 寻址方式
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="4. 寻址方式">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        基址寻址与变址寻址的区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、异常和中断
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、异常和中断">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心区别
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-exception" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 异常（Exception，又称例外）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 异常（Exception，又称例外）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_10" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        分类及特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-interrupt" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 中断（Interrupt）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="3. 中断（Interrupt）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#_11" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_12" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        处理流程
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_13" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        关键说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4-isa" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        4. ISA的相关规定
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、MIPS指令格式与寻址
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、MIPS指令格式与寻址">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心特性
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mips32" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. MIPS指令格式（32位）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. MIPS指令格式（32位）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ar-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （a）R-型指令（寄存器型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#bi-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （b）I-型指令（立即数型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#cj-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （c）J-型指令（跳转型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 大端（文档中“大瑞”修正）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_14" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、选择与循环结构汇编
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、选择与循环结构汇编">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#ifif-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、选择分支结构（if/if-else）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、选择分支结构（if/if-else）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-if" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 单分支if
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-if-else" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 双分支if-else
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#whiledo-whilefor" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、循环结构（while/do-while/for）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、循环结构（while/do-while/for）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. while循环（先判断后执行）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-do-while" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. do-while循环（先执行后判断）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3-for" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. for循环（初始化+判断+更新一体化）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#_15" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        核心指令总结
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_16" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、过程调用
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、过程调用">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 预备知识
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 预备知识">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1jal" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）jal指令的作用
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）寄存器规则（MIPS寄存器使用规范）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3mipsstack-frame" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）MIPS栈与栈帧（Stack Frame）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. MIPS过程调用协议
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. MIPS过程调用协议">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1p" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）调用过程P的执行步骤（调用前）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2q" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）被调用过程Q的执行步骤（三段式）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="（2）被调用过程Q的执行步骤（三段式）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ① 开始段（栈帧生成、寄存器保存、局部变量申请）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ② 本体段（过程体）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        ③ 结尾段（寄存器恢复、栈帧释放、返回）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）栈帧生命周期
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="_1">第四章 指令系统<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h1>
+<h2 id="_2">一、指令格式<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 基本格式<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<h4 id="412">4.1.2 指令的基本格式<a class="headerlink" href="#412" title="Permanent link">&para;</a></h4>
+<p>一条指令是机器语言的一个语句，是一组有意义的二进制代码，通常包括两部分：</p>
+<table>
+<thead>
+<tr>
+<th>操作码字段</th>
+<th>地址码字段</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>指出该指令应执行的操作及功能（关键信息），例如：算术加/减、程序转移、返回等</td>
+<td>给出被操作信息（指令或数据）的地址，包括：<br>- 参与运算的一个或多个操作数地址<br>- 运算结果的保存地址<br>- 程序转移地址<br>- 被调用子程序的入口地址等</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_3">指令字长<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定义：一条指令所包含的二进制代码的位数</li>
+<li>取决于：操作码长度、地址码长度、地址码个数</li>
+<li>与机器字长的关系：无固定关系，可等于、大于或小于机器字长</li>
+<li>字长指令：指令长度 = 机器字长</li>
+<li>半字长指令：指令长度 = 半个机器字长</li>
+<li>双字长指令：指令长度 = 两个机器字长</li>
+<li>注意：指令长度影响取指令时间</li>
+<li>单字长指令：访存1次，1个存取周期</li>
+<li>双字长指令：访存2次，2个存取周期</li>
+</ul>
+<h4 id="_4">指令字结构<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>定长指令字结构：所有指令长度相等</li>
+<li>优点：执行速度快，控制简单</li>
+<li>变长指令字结构：指令长度随功能不同而变化</li>
+<li>注意：主存按字节编址，指令字长通常为字节的整数倍</li>
+</ul>
+<h4 id="_5">指令格式分类（按地址码个数）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h4>
+<p>根据指令中操作数地址码的数目，分为：</p>
+<ul>
+<li>零地址指令：操作码 + 无地址码</li>
+<li>一地址指令：操作码 + 1个地址码</li>
+<li>二地址指令：操作码 + 2个地址码</li>
+<li>三地址指令：操作码 + 3个地址码</li>
+</ul>
+<h3 id="2">2. 操作码编码<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h4 id="1_1">（1）固定长度操作码<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>所有指令的操作码字段位数固定</li>
+<li>优点：译码简单，速度快</li>
+<li>缺点：指令字长有限时，指令种类较少</li>
+</ul>
+<h4 id="2_1">（2）扩展操作码（可变长度操作码）<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>目的：指令字长有限时，保持丰富的指令种类</li>
+<li>原理：操作码长度随地址码的减少而增加（不同地址数的指令具有不同长度的操作码）</li>
+<li>核心优势：有效缩短指令字长，兼顾指令种类和字长优化</li>
+</ul>
+<h4 id="16">扩展操作码示例（指令字长16位）<a class="headerlink" href="#16" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>指令类型</th>
+<th>操作码位数</th>
+<th>地址码字段</th>
+<th>指令条数</th>
+<th>扩展说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>三地址指令</td>
+<td>4位</td>
+<td><span class="arithmatex">\(A_1\)</span>（4位）、<span class="arithmatex">\(A_2\)</span>（4位）、<span class="arithmatex">\(A_3\)</span>（4位）</td>
+<td>15条</td>
+<td>留1个编码（1111）用于扩展</td>
+</tr>
+<tr>
+<td>二地址指令</td>
+<td>8位（4+4）</td>
+<td><span class="arithmatex">\(A_1\)</span>（4位）、<span class="arithmatex">\(A_2\)</span>（4位）</td>
+<td>15条</td>
+<td>前4位为1111，留1个编码（11111111）用于扩展</td>
+</tr>
+<tr>
+<td>一地址指令</td>
+<td>12位（8+4）</td>
+<td><span class="arithmatex">\(A_1\)</span>（4位）</td>
+<td>15条</td>
+<td>前8位为11111111，留1个编码用于扩展</td>
+</tr>
+<tr>
+<td>零地址指令</td>
+<td>16位（12+4）</td>
+<td>无</td>
+<td>16条</td>
+<td>前12位为111111111111</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_6">扩展操作码设计规则<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h4>
+<ol>
+<li>不允许短码是长码的前缀（短操作码不能与长操作码的前面部分代码相同）</li>
+<li>各指令的操作码不可重复</li>
+<li>优化原则：使用频率高的指令分配较短操作码，降低译码和分析时间</li>
+</ol>
+<h3 id="3">3. 操作类型<a class="headerlink" href="#3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>数据传送：load（加载）、save（保存）</li>
+<li>算术和逻辑运算</li>
+<li>移位操作</li>
+<li>转移操作：JMP（跳转）、Branch（分支）</li>
+<li>系统调用（自陷指令相关）</li>
+<li>其他：如中断相关操作</li>
+</ol>
+<h3 id="4">4. 寻址方式<a class="headerlink" href="#4" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>寻址方式</th>
+<th>有效地址（EA）计算</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>立即寻址</td>
+<td>EA = 指令中的立即数</td>
+<td>直接操作指令中的立即数，无需访存</td>
+</tr>
+<tr>
+<td>直接寻址</td>
+<td>EA = 指令中的直接地址</td>
+<td>直接给出操作数在主存的地址</td>
+</tr>
+<tr>
+<td>寄存器寻址</td>
+<td>EA = 寄存器编号</td>
+<td>操作数存于寄存器，速度最快</td>
+</tr>
+<tr>
+<td>寄存器间接寻址</td>
+<td>EA = 寄存器中的内容</td>
+<td>寄存器中存放操作数的主存地址</td>
+</tr>
+<tr>
+<td>变址寻址</td>
+<td>EA = (I) + A（I为变址寄存器）</td>
+<td>常用于数组、字符串等连续存储数据的访问</td>
+</tr>
+<tr>
+<td>相对寻址</td>
+<td>EA = (PC) + A（PC为程序计数器）</td>
+<td>以当前指令地址为基准，偏移量为A，用于分支转移</td>
+</tr>
+<tr>
+<td>基址寻址</td>
+<td>EA = (B) + A（B为基址寄存器）</td>
+<td>用于内存管理（如重定位），基址寄存器存放内存基地址</td>
+</tr>
+</tbody>
+</table>
+<h4 id="_7">基址寻址与变址寻址的区别<a class="headerlink" href="#_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>变址寻址：变址寄存器I内容可变，地址码A固定，侧重“偏移量固定，基址（I）可变”（如数组元素访问）</li>
+<li>基址寻址：基址寄存器B内容固定（如内存分区基址），地址码A可变，侧重“基址固定，偏移量（A）可变”（如内存保护、重定位）</li>
+</ul>
+<h2 id="_8">二、异常和中断<a class="headerlink" href="#_8" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. 核心区别<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<ul>
+<li>异常：CPU<strong>内部</strong>事件（执行指令过程中发生）</li>
+<li>中断：CPU<strong>外部</strong>事件（I/O部件发起，与当前执行指令无关）</li>
+<li>共性：处理过程基本相同，部分系统/教材统称“中断”或“异常”</li>
+</ul>
+<h3 id="2-exception">2. 异常（Exception，又称例外）<a class="headerlink" href="#2-exception" title="Permanent link">&para;</a></h3>
+<h4 id="_9">定义<a class="headerlink" href="#_9" title="Permanent link">&para;</a></h4>
+<p>处理器执行某条指令时，CPU内部发生的事件（如整除0、溢出、缺页等）</p>
+<h4 id="_10">分类及特点<a class="headerlink" href="#_10" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>定义</th>
+<th>处理后是否返回原指令</th>
+<th>示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>故障（Fault，失效）</td>
+<td>执行指令过程中检测到的异常</td>
+<td>部分可返回（如缺页），部分不可（如非法操作码）</td>
+<td>缺页、保护错、除数为0、非法操作码</td>
+</tr>
+<tr>
+<td>自陷（Trap，陷阱）</td>
+<td>预先安排的“异常”事件（人为设置）</td>
+<td>是（返回自陷指令的下一条指令）</td>
+<td>单步跟踪、断点设置、系统调用指令、条件自陷指令</td>
+</tr>
+<tr>
+<td>终止（Abort）</td>
+<td>严重错误导致程序无法继续执行</td>
+<td>否</td>
+<td>DRAM/SRAM校验错、严重硬件故障</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3-interrupt">3. 中断（Interrupt）<a class="headerlink" href="#3-interrupt" title="Permanent link">&para;</a></h3>
+<h4 id="_11">定义<a class="headerlink" href="#_11" title="Permanent link">&para;</a></h4>
+<p>程序执行过程中，外设完成任务或发生特殊事件时，向CPU发起的请求（如打印机缺纸、键盘缓冲满、定时采样结束）</p>
+<h4 id="_12">处理流程<a class="headerlink" href="#_12" title="Permanent link">&para;</a></h4>
+<ol>
+<li>每条指令执行完毕后，CPU查询是否有中断请求</li>
+<li>若有，保存断点（下条指令地址）到栈或寄存器</li>
+<li>转入中断服务程序执行</li>
+<li>服务程序结束后，恢复断点，返回原程序继续执行</li>
+</ol>
+<h4 id="_13">关键说明<a class="headerlink" href="#_13" title="Permanent link">&para;</a></h4>
+<ul>
+<li>又称I/O中断或外部中断</li>
+<li>需通过专门的中断请求线向CPU发起请求</li>
+</ul>
+<h3 id="4-isa">4. ISA的相关规定<a class="headerlink" href="#4-isa" title="Permanent link">&para;</a></h3>
+<p>指令集架构（ISA）需明确：</p>
+<ul>
+<li>异常/中断类型定义</li>
+<li>自陷指令规范</li>
+<li>中断允许位设置</li>
+<li>异常/中断原因的识别与记录</li>
+<li>断点信息保存方式</li>
+<li>软硬件协同处理机制</li>
+</ul>
+<h2 id="mips">三、MIPS指令格式与寻址<a class="headerlink" href="#mips" title="Permanent link">&para;</a></h2>
+<h3 id="1_3">1. 核心特性<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h3>
+<ul>
+<li>典型RISC处理器，采用32位<strong>定长指令字</strong></li>
+<li>操作码字段固定长度，无专门寻址方式字段（由指令格式确定寻址方式）</li>
+<li>指令格式仅3种：R-型、I-型、J-型</li>
+</ul>
+<h3 id="2-mips32">2. MIPS指令格式（32位）<a class="headerlink" href="#2-mips32" title="Permanent link">&para;</a></h3>
+<h4 id="ar-">（a）R-型指令（寄存器型）<a class="headerlink" href="#ar-" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>31-26</th>
+<th>25-21</th>
+<th>20-16</th>
+<th>15-11</th>
+<th>10-6</th>
+<th>5-0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OP（操作码，6位）</td>
+<td>rs（源寄存器1，5位）</td>
+<td>rt（源寄存器2，5位）</td>
+<td>rd（目的寄存器，5位）</td>
+<td>shamt（移位量，5位）</td>
+<td>func（功能码，6位）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="bi-">（b）I-型指令（立即数型）<a class="headerlink" href="#bi-" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>31-26</th>
+<th>25-21</th>
+<th>20-16</th>
+<th>15-0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OP（操作码，6位）</td>
+<td>rs（源寄存器，5位）</td>
+<td>rt（目的寄存器，5位）</td>
+<td>立即数（16位）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="cj-">（c）J-型指令（跳转型）<a class="headerlink" href="#cj-" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>31-26</th>
+<th>25-0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OP（操作码，6位）</td>
+<td>直接地址（26位）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3_1">3. 大端（文档中“大瑞”修正）<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h3>
+<p>MIPS支持大端存储模式（数据的高位字节存于低地址，低位字节存于高地址）</p>
+<h2 id="_14">四、选择与循环结构汇编<a class="headerlink" href="#_14" title="Permanent link">&para;</a></h2>
+<h3 id="ifif-else">一、选择分支结构（if/if-else）<a class="headerlink" href="#ifif-else" title="Permanent link">&para;</a></h3>
+<p>核心逻辑：通过「比较指令（slt/sltu）+ 分支指令（beq/bne）」控制执行流，无关键字直接支持，依赖跳转实现。</p>
+<h4 id="1-if">1. 单分支if<a class="headerlink" href="#1-if" title="Permanent link">&para;</a></h4>
+<p><strong>C代码示例</strong></p>
+<div class="highlight"><pre><span></span><code><span class="c1">// 若a &lt; b，c = a + b</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">if_demo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">a</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="mi">0</span><span class="p">;</span>
+<span class="w">    </span><span class="k">if</span><span class="w"> </span><span class="p">(</span><span class="n">a</span><span class="w"> </span><span class="o">&lt;</span><span class="w"> </span><span class="n">b</span><span class="p">)</span><span class="w"> </span><span class="n">c</span><span class="w"> </span><span class="o">=</span><span class="w"> </span><span class="n">a</span><span class="w"> </span><span class="o">+</span><span class="w"> </span><span class="n">b</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">c</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div>
+<p><strong>简洁MIPS汇编</strong>
+<div class="highlight"><pre><span></span><code><span class="nf">if_demo:</span>
+<span class="w">    </span><span class="nv">li</span><span class="w">      </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kc">0</span><span class="w">          </span><span class="c"># c=0</span>
+<span class="w">    </span><span class="k">slt</span><span class="w">     </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a1</span><span class="w">   </span><span class="c"># a&lt;b则$t1=1</span>
+<span class="w">    </span><span class="k">beq</span><span class="w">     </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kt">$zero</span><span class="nb">,</span><span class="w"> </span>ret<span class="w"> </span><span class="c"># 不成立则跳至返回</span>
+<span class="w">    </span><span class="k">add</span><span class="w">     </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a1</span><span class="w">   </span><span class="c"># 成立执行c=a+b</span>
+<span class="nf">ret:</span>
+<span class="w">    </span><span class="nv">move</span><span class="w">    </span><span class="kt">$v0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t0</span>
+<span class="w">    </span><span class="k">jr</span><span class="w">      </span><span class="kt">$ra</span>
+</code></pre></div></p>
+<h4 id="2-if-else">2. 双分支if-else<a class="headerlink" href="#2-if-else" title="Permanent link">&para;</a></h4>
+<p><strong>C代码示例</strong>
+<div class="highlight"><pre><span></span><code><span class="c1">// 若x≥y，max=x；否则max=y</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">if_else_demo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">x</span><span class="p">,</span><span class="w"> </span><span class="kt">int</span><span class="w"> </span><span class="n">y</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">&gt;=</span><span class="w"> </span><span class="n">y</span><span class="w"> </span><span class="o">?</span><span class="w"> </span><span class="n">x</span><span class="w"> </span><span class="o">:</span><span class="w"> </span><span class="n">y</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>简洁MIPS汇编</strong>
+<div class="highlight"><pre><span></span><code><span class="nf">if_else_demo:</span>
+<span class="w">    </span><span class="k">slt</span><span class="w">     </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a1</span><span class="w">   </span><span class="c"># x&lt;y则$t0=1</span>
+<span class="w">    </span><span class="k">bne</span><span class="w">     </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$zero</span><span class="nb">,</span><span class="w"> </span>else<span class="c"># 成立跳至else</span>
+<span class="w">    </span><span class="nv">move</span><span class="w">    </span><span class="kt">$v0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a0</span><span class="w">        </span><span class="c"># if：max=x</span>
+<span class="w">    </span><span class="k">j</span><span class="w">       </span>ret
+<span class="nf">else:</span>
+<span class="w">    </span><span class="nv">move</span><span class="w">    </span><span class="kt">$v0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a1</span><span class="w">        </span><span class="c"># else：max=y</span>
+<span class="nf">ret:</span>
+<span class="w">    </span><span class="k">jr</span><span class="w">      </span><span class="kt">$ra</span>
+</code></pre></div></p>
+<h3 id="whiledo-whilefor">二、循环结构（while/do-while/for）<a class="headerlink" href="#whiledo-whilefor" title="Permanent link">&para;</a></h3>
+<p>核心逻辑：「条件判断→循环体→变量更新」闭环，通过分支指令控制循环退出/继续。</p>
+<h4 id="1-while">1. while循环（先判断后执行）<a class="headerlink" href="#1-while" title="Permanent link">&para;</a></h4>
+<p><strong>C代码示例</strong>
+<div class="highlight"><pre><span></span><code><span class="c1">// 1~n累加和</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">while_demo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">sum</span><span class="o">=</span><span class="mi">0</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">sum</span><span class="w"> </span><span class="o">+=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="p">}</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">sum</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>简洁MIPS汇编</strong>
+<div class="highlight"><pre><span></span><code><span class="nf">while_demo:</span>
+<span class="w">    </span><span class="nv">li</span><span class="w">      </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kc">0</span><span class="w">          </span><span class="c"># sum=0</span>
+<span class="w">    </span><span class="nv">li</span><span class="w">      </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">          </span><span class="c"># i=1</span>
+<span class="nf">cond:</span>
+<span class="w">    </span><span class="k">slt</span><span class="w">     </span><span class="kt">$t2</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="w">   </span><span class="c"># n&lt;i则$t2=1</span>
+<span class="w">    </span><span class="k">bne</span><span class="w">     </span><span class="kt">$t2</span><span class="nb">,</span><span class="w"> </span><span class="kt">$zero</span><span class="nb">,</span><span class="w"> </span>ret<span class="w"> </span><span class="c"># 不成立退出</span>
+<span class="w">    </span><span class="k">add</span><span class="w">     </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="w">   </span><span class="c"># sum+=i</span>
+<span class="w">    </span><span class="k">addi</span><span class="w">    </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">     </span><span class="c"># i++</span>
+<span class="w">    </span><span class="k">j</span><span class="w">       </span>cond
+<span class="nf">ret:</span>
+<span class="w">    </span><span class="nv">move</span><span class="w">    </span><span class="kt">$v0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t0</span>
+<span class="w">    </span><span class="k">jr</span><span class="w">      </span><span class="kt">$ra</span>
+</code></pre></div></p>
+<h4 id="2-do-while">2. do-while循环（先执行后判断）<a class="headerlink" href="#2-do-while" title="Permanent link">&para;</a></h4>
+<p><strong>C代码示例</strong>
+<div class="highlight"><pre><span></span><code><span class="c1">// 1~n乘积</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">do_while_demo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">prod</span><span class="o">=</span><span class="mi">1</span><span class="p">,</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">do</span><span class="w"> </span><span class="p">{</span><span class="w"> </span><span class="n">prod</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">;</span><span class="w"> </span><span class="p">}</span><span class="w"> </span><span class="k">while</span><span class="p">(</span><span class="n">i</span><span class="w"> </span><span class="o">&lt;=</span><span class="w"> </span><span class="n">n</span><span class="p">);</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">prod</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>简洁MIPS汇编</strong>
+<div class="highlight"><pre><span></span><code><span class="nf">do_while_demo:</span>
+<span class="w">    </span><span class="nv">li</span><span class="w">      </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">          </span><span class="c"># prod=1</span>
+<span class="w">    </span><span class="nv">li</span><span class="w">      </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">          </span><span class="c"># i=1</span>
+<span class="nf">body:</span>
+<span class="w">    </span><span class="k">mul</span><span class="w">     </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="w">   </span><span class="c"># prod*=i</span>
+<span class="w">    </span><span class="k">addi</span><span class="w">    </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">     </span><span class="c"># i++</span>
+<span class="w">    </span><span class="k">slt</span><span class="w">     </span><span class="kt">$t2</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="w">   </span><span class="c"># n&lt;i则$t2=1</span>
+<span class="w">    </span><span class="k">beq</span><span class="w">     </span><span class="kt">$t2</span><span class="nb">,</span><span class="w"> </span><span class="kt">$zero</span><span class="nb">,</span><span class="w"> </span>body<span class="c"># 成立继续循环</span>
+<span class="w">    </span><span class="nv">move</span><span class="w">    </span><span class="kt">$v0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t0</span>
+<span class="w">    </span><span class="k">jr</span><span class="w">      </span><span class="kt">$ra</span>
+</code></pre></div></p>
+<h4 id="3-for">3. for循环（初始化+判断+更新一体化）<a class="headerlink" href="#3-for" title="Permanent link">&para;</a></h4>
+<p><strong>C代码示例</strong>
+<div class="highlight"><pre><span></span><code><span class="c1">// n的阶乘（n≥0）</span>
+<span class="kt">int</span><span class="w"> </span><span class="nf">for_demo</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">n</span><span class="p">)</span><span class="w"> </span><span class="p">{</span>
+<span class="w">    </span><span class="kt">int</span><span class="w"> </span><span class="n">fact</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span>
+<span class="w">    </span><span class="k">for</span><span class="p">(</span><span class="kt">int</span><span class="w"> </span><span class="n">i</span><span class="o">=</span><span class="mi">1</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">&lt;=</span><span class="n">n</span><span class="p">;</span><span class="w"> </span><span class="n">i</span><span class="o">++</span><span class="p">)</span><span class="w"> </span><span class="n">fact</span><span class="w"> </span><span class="o">*=</span><span class="w"> </span><span class="n">i</span><span class="p">;</span>
+<span class="w">    </span><span class="k">return</span><span class="w"> </span><span class="n">fact</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></p>
+<p><strong>简洁MIPS汇编</strong>
+<div class="highlight"><pre><span></span><code><span class="nf">for_demo:</span>
+<span class="w">    </span><span class="nv">li</span><span class="w">      </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">          </span><span class="c"># fact=1</span>
+<span class="w">    </span><span class="nv">li</span><span class="w">      </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">          </span><span class="c"># i=1</span>
+<span class="nf">cond:</span>
+<span class="w">    </span><span class="k">slt</span><span class="w">     </span><span class="kt">$t2</span><span class="nb">,</span><span class="w"> </span><span class="kt">$a0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="w">   </span><span class="c"># n&lt;i则$t2=1</span>
+<span class="w">    </span><span class="k">bne</span><span class="w">     </span><span class="kt">$t2</span><span class="nb">,</span><span class="w"> </span><span class="kt">$zero</span><span class="nb">,</span><span class="w"> </span>ret<span class="w"> </span><span class="c"># 不成立退出</span>
+<span class="w">    </span><span class="k">mul</span><span class="w">     </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="w">   </span><span class="c"># fact*=i</span>
+<span class="w">    </span><span class="k">addi</span><span class="w">    </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t1</span><span class="nb">,</span><span class="w"> </span><span class="kc">1</span><span class="w">     </span><span class="c"># i++</span>
+<span class="w">    </span><span class="k">j</span><span class="w">       </span>cond
+<span class="nf">ret:</span>
+<span class="w">    </span><span class="nv">move</span><span class="w">    </span><span class="kt">$v0</span><span class="nb">,</span><span class="w"> </span><span class="kt">$t0</span>
+<span class="w">    </span><span class="k">jr</span><span class="w">      </span><span class="kt">$ra</span>
+</code></pre></div></p>
+<h3 id="_15">核心指令总结<a class="headerlink" href="#_15" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能</th>
+<th>核心用途</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>slt/sltu</td>
+<td>有符号/无符号比较（&lt;）</td>
+<td>条件判断，转化逻辑为0/1</td>
+</tr>
+<tr>
+<td>beq/bne</td>
+<td>相等/不等分支跳转</td>
+<td>控制执行流转移</td>
+</tr>
+<tr>
+<td>add/addi/mul</td>
+<td>加减乘运算</td>
+<td>变量更新、循环体计算</td>
+</tr>
+<tr>
+<td>j</td>
+<td>无条件跳转</td>
+<td>回到条件判断或退出点</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_16">五、过程调用<a class="headerlink" href="#_16" title="Permanent link">&para;</a></h2>
+<h3 id="1_4">1. 预备知识<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h3>
+<h4 id="1jal">（1）jal指令的作用<a class="headerlink" href="#1jal" title="Permanent link">&para;</a></h4>
+<ul>
+<li>功能1：将返回地址（调用指令的下一条指令地址）自动存入<span class="arithmatex">\(ra寄存器（\)</span>31）</li>
+<li>功能2：将控制转移到被调用过程的入口地址</li>
+</ul>
+<h4 id="2mips">（2）寄存器规则（MIPS寄存器使用规范）<a class="headerlink" href="#2mips" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>寄存器组</th>
+<th>用途</th>
+<th>保存责任</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><span class="arithmatex">\(a0~\)</span>a3</td>
+<td>传递前4个非浮点数入口参数</td>
+<td>调用者（P）保存（若返回后需使用）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(v0~\)</span>v1</td>
+<td>传递非浮点数返回参数</td>
+<td>被调用者（Q）设置后返回</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(ra（\)</span>31）</td>
+<td>存放返回地址</td>
+<td>jal指令自动设置，被调用者（Q）需保存（若Q调用其他过程）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(s0~\)</span>s7（保存寄存器）</td>
+<td>过程返回后仍需使用的变量</td>
+<td>被调用者（Q）保存（使用前压栈，返回前恢复）</td>
+</tr>
+<tr>
+<td><span class="arithmatex">\(t0~\)</span>t9（临时寄存器）</td>
+<td>临时使用的变量</td>
+<td>调用者（P）保存（若需保留），被调用者（Q）可自由使用</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3mipsstack-frame">（3）MIPS栈与栈帧（Stack Frame）<a class="headerlink" href="#3mipsstack-frame" title="Permanent link">&para;</a></h4>
+<ul>
+<li>栈增长方向：高地址 → 低地址</li>
+<li>栈帧定义：每个过程独占的栈区，由帧指针<span class="arithmatex">\(fp和栈指针\)</span>sp界定<ul>
+<li>帧指针$fp：固定指向当前栈帧的起始位置（便于访问栈中变量）</li>
+<li>栈指针<span class="arithmatex">\(sp：动态移动（数据入栈时\)</span>sp递减，出栈时递增）</li>
+</ul>
+</li>
+<li>栈帧组成（从高地址到低地址）：<ol>
+<li>临时寄存器（<span class="arithmatex">\(t0~\)</span>t9）（必要时保存）</li>
+<li>参数寄存器（<span class="arithmatex">\(a0~\)</span>a3）（必要时保存）</li>
+<li>其余输入参数（超过4个时，压栈）</li>
+<li>返回地址$ra（嵌套调用时保存）</li>
+<li>保存寄存器（<span class="arithmatex">\(s0~\)</span>s7）（被调用者保存）</li>
+<li>局部变量（寄存器溢出或复杂类型如数组、结构）</li>
+</ol>
+</li>
+<li>特殊情况：若当前过程无局部变量，编译器可省略$fp的设置与恢复（减少开销）</li>
+<li><span class="arithmatex">\(fp初始值：通常为调用时的\)</span>sp或$sp-4（指向当前栈帧前一个字或第一个字起始位置）</li>
+</ul>
+<h3 id="2-mips">2. MIPS过程调用协议<a class="headerlink" href="#2-mips" title="Permanent link">&para;</a></h3>
+<h4 id="1p">（1）调用过程P的执行步骤（调用前）<a class="headerlink" href="#1p" title="Permanent link">&para;</a></h4>
+<ol>
+<li>保存寄存器：若P返回后需使用<span class="arithmatex">\(a0~\)</span>a3、<span class="arithmatex">\(t0~\)</span>t9，将其压入当前栈帧（调用者保存）</li>
+<li>传递参数：前4个参数送入<span class="arithmatex">\(a0~\)</span>a3，其余参数压入当前栈帧</li>
+<li>执行jal指令：保存返回地址到$ra，控制转移到被调用过程Q</li>
+</ol>
+<h4 id="2q">（2）被调用过程Q的执行步骤（三段式）<a class="headerlink" href="#2q" title="Permanent link">&para;</a></h4>
+<h5 id="1_5">① 开始段（栈帧生成、寄存器保存、局部变量申请）<a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h5>
+<ol>
+<li>申请栈帧：调整<span class="arithmatex">\(sp（\)</span>sp = $sp - 栈帧大小）</li>
+<li>保存关键寄存器：若Q需调用其他过程，将<span class="arithmatex">\(ra和\)</span>fp压入当前栈帧</li>
+<li>设置<span class="arithmatex">\(fp：\)</span>fp = $sp + 栈帧大小（固定栈帧起始位置）</li>
+<li>保存保存寄存器：若Q使用<span class="arithmatex">\(s0~\)</span>s7，将其压入当前栈帧</li>
+<li>分配局部变量空间：</li>
+<li>寄存器溢出时，在栈帧中分配</li>
+<li>复杂类型（数组、结构）在栈帧中分配</li>
+<li>栈帧大小：至少等于上述所有存储单元的总和</li>
+</ol>
+<h5 id="2_2">② 本体段（过程体）<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h5>
+<ul>
+<li>执行过程的核心逻辑（具体功能实现）</li>
+</ul>
+<h5 id="3_2">③ 结尾段（寄存器恢复、栈帧释放、返回）<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h5>
+<ol>
+<li>恢复保存寄存器：将<span class="arithmatex">\(sp栈帧中保存的\)</span>s0~$s7值恢复到对应寄存器</li>
+<li>恢复<span class="arithmatex">\(ra和\)</span>fp：若已保存，分别恢复到<span class="arithmatex">\(ra和\)</span>fp</li>
+<li>释放栈帧：调整<span class="arithmatex">\(sp（\)</span>sp = $sp + 栈帧大小 或 $sp = $fp）</li>
+<li>返回调用过程：执行jr $ra指令（将控制权返还给P）</li>
+</ol>
+<h4 id="3_3">（3）栈帧生命周期<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>调用过程P和被调用过程Q的栈帧在调用期间共存，Q返回后，其栈帧被释放（$sp恢复到调用前位置）</li>
+</ul>
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div id="utterances_container">
+  <script src="https://utteranc.es/client.js"
+    repo="MaxizYB/NJU-ISE-24"
+    issue-term="pathname"
+    label="comment"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+<div style="text-align: center; margin-top: 20px; padding: 10px;">
+  <div style="display: flex; justify-content: center; gap: 30px; font-size: 13px;">
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>本站访问量：<span id="busuanzi_value_site_pv" style="font-weight: bold; color: #0366d6;"></span>
+    </span>
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>访客数：<span id="busuanzi_value_site_uv" style="font-weight: bold; color: #28a745;"></span>
+    </span>
+  </div>
+</div>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://utteranc.es/client.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>

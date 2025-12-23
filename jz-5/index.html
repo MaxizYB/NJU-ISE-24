@@ -1,0 +1,2890 @@
+
+<!doctype html>
+<html lang="en" class="no-js">
+  <head>
+    
+      <meta charset="utf-8">
+      <meta name="viewport" content="width=device-width,initial-scale=1">
+      
+      
+      
+        <link rel="canonical" href="https://MaxizYB.github.io/NJU-ISE-24/jz-5/">
+      
+      
+        <link rel="prev" href="../jz-4/">
+      
+      
+        <link rel="next" href="../jz-6/">
+      
+      
+        
+      
+      
+      <link rel="icon" href="../assets/images/favicon.png">
+      <meta name="generator" content="mkdocs-1.6.1, mkdocs-material-9.7.1">
+    
+    
+      
+        <title>第五章 - OPEN-ISE-24-4</title>
+      
+    
+    
+      <link rel="stylesheet" href="../assets/stylesheets/main.484c7ddc.min.css">
+      
+        
+        <link rel="stylesheet" href="../assets/stylesheets/palette.ab4e12ef.min.css">
+      
+      
+
+
+    
+    
+      
+    
+    
+      
+        
+        
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Merriweather+Sans:300,300i,400,400i,700,700i%7CRoboto+Mono:400,400i,700,700i&display=fallback">
+        <style>:root{--md-text-font:"Merriweather Sans";--md-code-font:"Roboto Mono"}</style>
+      
+    
+    
+    <script>__md_scope=new URL("..",location),__md_hash=e=>[...e].reduce(((e,_)=>(e<<5)-e+_.charCodeAt(0)),0),__md_get=(e,_=localStorage,t=__md_scope)=>JSON.parse(_.getItem(t.pathname+"."+e)),__md_set=(e,_,t=localStorage,a=__md_scope)=>{try{t.setItem(a.pathname+"."+e,JSON.stringify(_))}catch(e){}}</script>
+    
+      
+
+    
+    
+  </head>
+  
+  
+    
+    
+      
+    
+    
+    
+    
+    <body dir="ltr" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange">
+  
+    
+    <input class="md-toggle" data-md-toggle="drawer" type="checkbox" id="__drawer" autocomplete="off">
+    <input class="md-toggle" data-md-toggle="search" type="checkbox" id="__search" autocomplete="off">
+    <label class="md-overlay" for="__drawer"></label>
+    <div data-md-component="skip">
+      
+        
+        <a href="#cpu" class="md-skip">
+          Skip to content
+        </a>
+      
+    </div>
+    <div data-md-component="announce">
+      
+    </div>
+    
+    
+      
+
+<header class="md-header" data-md-component="header">
+  <nav class="md-header__inner md-grid" aria-label="Header">
+    <a href=".." title="OPEN-ISE-24-4" class="md-header__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    <label class="md-header__button md-icon" for="__drawer">
+      
+      <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M3 6h18v2H3zm0 5h18v2H3zm0 5h18v2H3z"/></svg>
+    </label>
+    <div class="md-header__title" data-md-component="header-title">
+      <div class="md-header__ellipsis">
+        <div class="md-header__topic">
+          <span class="md-ellipsis">
+            OPEN-ISE-24-4
+          </span>
+        </div>
+        <div class="md-header__topic" data-md-component="header-topic">
+          <span class="md-ellipsis">
+            
+              第五章
+            
+          </span>
+        </div>
+      </div>
+    </div>
+    
+      
+        <form class="md-header__option" data-md-component="palette">
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="default" data-md-color-primary="deep-purple" data-md-color-accent="deep-orange"  aria-label="Light mode"  type="radio" name="__palette" id="__palette_0">
+    
+      <label class="md-header__button md-icon" title="Light mode" for="__palette_1" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="m17.75 4.09-2.53 1.94.91 3.06-2.63-1.81-2.63 1.81.91-3.06-2.53-1.94L12.44 4l1.06-3 1.06 3zm3.5 6.91-1.64 1.25.59 1.98-1.7-1.17-1.7 1.17.59-1.98L15.75 11l2.06-.05L18.5 9l.69 1.95zm-2.28 4.95c.83-.08 1.72 1.1 1.19 1.85-.32.45-.66.87-1.08 1.27C15.17 23 8.84 23 4.94 19.07c-3.91-3.9-3.91-10.24 0-14.14.4-.4.82-.76 1.27-1.08.75-.53 1.93.36 1.85 1.19-.27 2.86.69 5.83 2.89 8.02a9.96 9.96 0 0 0 8.02 2.89m-1.64 2.02a12.08 12.08 0 0 1-7.8-3.47c-2.17-2.19-3.33-5-3.49-7.82-2.81 3.14-2.7 7.96.31 10.98 3.02 3.01 7.84 3.12 10.98.31"/></svg>
+      </label>
+    
+  
+    
+    
+    
+    <input class="md-option" data-md-color-media="" data-md-color-scheme="slate" data-md-color-primary="deep-purple" data-md-color-accent="deep-purple"  aria-label="Dark mode"  type="radio" name="__palette" id="__palette_1">
+    
+      <label class="md-header__button md-icon" title="Dark mode" for="__palette_0" hidden>
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 7a5 5 0 0 1 5 5 5 5 0 0 1-5 5 5 5 0 0 1-5-5 5 5 0 0 1 5-5m0 2a3 3 0 0 0-3 3 3 3 0 0 0 3 3 3 3 0 0 0 3-3 3 3 0 0 0-3-3m0-7 2.39 3.42C13.65 5.15 12.84 5 12 5s-1.65.15-2.39.42zM3.34 7l4.16-.35A7.2 7.2 0 0 0 5.94 8.5c-.44.74-.69 1.5-.83 2.29zm.02 10 1.76-3.77a7.131 7.131 0 0 0 2.38 4.14zM20.65 7l-1.77 3.79a7.02 7.02 0 0 0-2.38-4.15zm-.01 10-4.14.36c.59-.51 1.12-1.14 1.54-1.86.42-.73.69-1.5.83-2.29zM12 22l-2.41-3.44c.74.27 1.55.44 2.41.44.82 0 1.63-.17 2.37-.44z"/></svg>
+      </label>
+    
+  
+</form>
+      
+    
+    
+      <script>var palette=__md_get("__palette");if(palette&&palette.color){if("(prefers-color-scheme)"===palette.color.media){var media=matchMedia("(prefers-color-scheme: light)"),input=document.querySelector(media.matches?"[data-md-color-media='(prefers-color-scheme: light)']":"[data-md-color-media='(prefers-color-scheme: dark)']");palette.color.media=input.getAttribute("data-md-color-media"),palette.color.scheme=input.getAttribute("data-md-color-scheme"),palette.color.primary=input.getAttribute("data-md-color-primary"),palette.color.accent=input.getAttribute("data-md-color-accent")}for(var[key,value]of Object.entries(palette.color))document.body.setAttribute("data-md-color-"+key,value)}</script>
+    
+    
+    
+      
+      
+        <label class="md-header__button md-icon" for="__search">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        </label>
+        <div class="md-search" data-md-component="search" role="dialog">
+  <label class="md-search__overlay" for="__search"></label>
+  <div class="md-search__inner" role="search">
+    <form class="md-search__form" name="search">
+      <input type="text" class="md-search__input" name="query" aria-label="Search" placeholder="Search" autocapitalize="off" autocorrect="off" autocomplete="off" spellcheck="false" data-md-component="search-query" required>
+      <label class="md-search__icon md-icon" for="__search">
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M9.5 3A6.5 6.5 0 0 1 16 9.5c0 1.61-.59 3.09-1.56 4.23l.27.27h.79l5 5-1.5 1.5-5-5v-.79l-.27-.27A6.52 6.52 0 0 1 9.5 16 6.5 6.5 0 0 1 3 9.5 6.5 6.5 0 0 1 9.5 3m0 2C7 5 5 7 5 9.5S7 14 9.5 14 14 12 14 9.5 12 5 9.5 5"/></svg>
+        
+        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M20 11v2H8l5.5 5.5-1.42 1.42L4.16 12l7.92-7.92L13.5 5.5 8 11z"/></svg>
+      </label>
+      <nav class="md-search__options" aria-label="Search">
+        
+        <button type="reset" class="md-search__icon md-icon" title="Clear" aria-label="Clear" tabindex="-1">
+          
+          <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M19 6.41 17.59 5 12 10.59 6.41 5 5 6.41 10.59 12 5 17.59 6.41 19 12 13.41 17.59 19 19 17.59 13.41 12z"/></svg>
+        </button>
+      </nav>
+      
+    </form>
+    <div class="md-search__output">
+      <div class="md-search__scrollwrap" tabindex="0" data-md-scrollfix>
+        <div class="md-search-result" data-md-component="search-result">
+          <div class="md-search-result__meta">
+            Initializing search
+          </div>
+          <ol class="md-search-result__list" role="presentation"></ol>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+      
+    
+    
+  </nav>
+  
+</header>
+    
+    <div class="md-container" data-md-component="container">
+      
+      
+        
+          
+            
+<nav class="md-tabs" aria-label="Tabs" data-md-component="tabs">
+  <div class="md-grid">
+    <ul class="md-tabs__list">
+      
+        
+  
+  
+  
+  
+    <li class="md-tabs__item">
+      <a href=".." class="md-tabs__link">
+        
+  
+  
+    
+  
+  首页
+
+      </a>
+    </li>
+  
+
+      
+        
+  
+  
+  
+  
+    
+    
+      <li class="md-tabs__item">
+        <a href="../lc-overview/" class="md-tabs__link">
+          
+  
+  
+  力扣打卡
+
+        </a>
+      </li>
+    
+  
+
+      
+        
+  
+  
+  
+    
+  
+  
+    
+    
+      
+  
+  
+  
+    
+  
+  
+    
+    
+      <li class="md-tabs__item md-tabs__item--active">
+        <a href="../jz-overview/" class="md-tabs__link">
+          
+  
+  
+  课程复习资料
+
+        </a>
+      </li>
+    
+  
+
+    
+  
+
+      
+    </ul>
+  </div>
+</nav>
+          
+        
+      
+      <main class="md-main" data-md-component="main">
+        <div class="md-main__inner md-grid">
+          
+            
+              
+              <div class="md-sidebar md-sidebar--primary" data-md-component="sidebar" data-md-type="navigation" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+
+  
+
+
+<nav class="md-nav md-nav--primary md-nav--lifted" aria-label="Navigation" data-md-level="0">
+  <label class="md-nav__title" for="__drawer">
+    <a href=".." title="OPEN-ISE-24-4" class="md-nav__button md-logo" aria-label="OPEN-ISE-24-4" data-md-component="logo">
+      
+  
+  <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24"><path d="M12 8a3 3 0 0 0 3-3 3 3 0 0 0-3-3 3 3 0 0 0-3 3 3 3 0 0 0 3 3m0 3.54C9.64 9.35 6.5 8 3 8v11c3.5 0 6.64 1.35 9 3.54 2.36-2.19 5.5-3.54 9-3.54V8c-3.5 0-6.64 1.35-9 3.54"/></svg>
+
+    </a>
+    OPEN-ISE-24-4
+  </label>
+  
+  <ul class="md-nav__list" data-md-scrollfix>
+    
+      
+      
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href=".." class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    首页
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+    
+      
+      
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2" id="__nav_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    力扣打卡
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    力扣打卡
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题目
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_2_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_2_2" id="__nav_2_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    题解
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_2_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_2_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    题解
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-bfs-dfs/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    BFS / DFS
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../lc-MST/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    最小生成树
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+      
+      
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+        
+        
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--section md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3" id="__nav_3_label" tabindex="">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    课程复习资料
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="1" aria-labelledby="__nav_3_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    课程复习资料
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--active md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_1" checked>
+        
+          
+          <label class="md-nav__link" for="__nav_3_1" id="__nav_3_1_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    计算机组成
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_1_label" aria-expanded="true">
+          <label class="md-nav__title" for="__nav_3_1">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    计算机组成
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-4/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第四章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+    
+  
+  
+  
+    <li class="md-nav__item md-nav__item--active">
+      
+      <input class="md-nav__toggle md-toggle" type="checkbox" id="__toc">
+      
+      
+        
+      
+      
+        <label class="md-nav__link md-nav__link--active" for="__toc">
+          
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五章
+  
+
+    
+  </span>
+  
+  
+
+          <span class="md-nav__icon md-icon"></span>
+        </label>
+      
+      <a href="./" class="md-nav__link md-nav__link--active">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第五章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+      
+        
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpu_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、CPU的功能和基本结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、CPU的功能和基本结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 基本组成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 基本组成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）运算器（执行部件）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）控制器（控制部件）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、指令执行过程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、指令执行过程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心周期概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 核心周期概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）周期定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25253" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）周期关系（图5.2、5.3）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）关键说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 指令执行流程（通用步骤）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、MIPS指令格式与功能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、MIPS指令格式与功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 指令格式（图5.5）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 指令格式（图5.5）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1r-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）R-型指令（寄存器型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2i-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）I-型指令（立即数型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3j-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）J-型指令（跳转型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mipsrtl51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 典型MIPS指令功能（RTL描述）（表5.1）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、数据通路的功能和基本结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、数据通路的功能和基本结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-516" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 单周期数据通路（图5.16）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 单周期数据通路（图5.16）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）关键部件与控制信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）数据流向
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-525" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多周期数据通路（图5.25）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 多周期数据通路（图5.25）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）新增控制信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）状态转换
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、控制器的功能和工作原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、控制器的功能和工作原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 微程序控制器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 微程序控制器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）基本思想
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）核心概念（表5.2）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3511" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）基本结构（图5.11）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）微指令编码方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 硬布线控制器（对比）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、异常和中断机制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、异常和中断机制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 分类
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 分类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#153" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）异常分类（表5.3）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）中断分类
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 处理过程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、指令流水线（第六章先导）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、指令流水线（第六章先导）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多处理器基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、第五章核心考点汇总
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-6/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第六章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-7/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第七章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../jz-8/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    第八章
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_2" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_2" id="__nav_3_2_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    C++高级程序设计
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_2_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_2">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    C++高级程序设计
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-overview/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    概览
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../gc-knowledge/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+              
+                
+  
+  
+  
+  
+    
+    
+    
+    
+      
+      
+    
+    
+    <li class="md-nav__item md-nav__item--nested">
+      
+        
+        
+        <input class="md-nav__toggle md-toggle " type="checkbox" id="__nav_3_3" >
+        
+          
+          <label class="md-nav__link" for="__nav_3_3" id="__nav_3_3_label" tabindex="0">
+            
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    自动化测试
+  
+
+    
+  </span>
+  
+  
+
+            <span class="md-nav__icon md-icon"></span>
+          </label>
+        
+        <nav class="md-nav" data-md-level="2" aria-labelledby="__nav_3_3_label" aria-expanded="false">
+          <label class="md-nav__title" for="__nav_3_3">
+            <span class="md-nav__icon md-icon"></span>
+            
+  
+    自动化测试
+  
+
+          </label>
+          <ul class="md-nav__list" data-md-scrollfix>
+            
+              
+                
+  
+  
+  
+  
+    <li class="md-nav__item">
+      <a href="../st/" class="md-nav__link">
+        
+  
+  
+  <span class="md-ellipsis">
+    
+  
+    知识整理
+  
+
+    
+  </span>
+  
+  
+
+      </a>
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+              
+            
+          </ul>
+        </nav>
+      
+    </li>
+  
+
+    
+  </ul>
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+            
+              
+              <div class="md-sidebar md-sidebar--secondary" data-md-component="sidebar" data-md-type="toc" >
+                <div class="md-sidebar__scrollwrap">
+                  <div class="md-sidebar__inner">
+                    
+
+<nav class="md-nav md-nav--secondary" aria-label="Table of contents">
+  
+  
+  
+    
+  
+  
+    <label class="md-nav__title" for="__toc">
+      <span class="md-nav__icon md-icon"></span>
+      Table of contents
+    </label>
+    <ul class="md-nav__list" data-md-component="toc" data-md-scrollfix>
+      
+        <li class="md-nav__item">
+  <a href="#cpu_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        一、CPU的功能和基本结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="一、CPU的功能和基本结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心功能
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 基本组成
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 基本组成">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）运算器（执行部件）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）控制器（控制部件）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        二、指令执行过程
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="二、指令执行过程">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 核心周期概念
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 核心周期概念">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）周期定义
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#25253" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）周期关系（图5.2、5.3）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）关键说明
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 指令执行流程（通用步骤）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#mips" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        三、MIPS指令格式与功能
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="三、MIPS指令格式与功能">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-55" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 指令格式（图5.5）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 指令格式（图5.5）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1r-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）R-型指令（寄存器型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2i-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）I-型指令（立即数型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3j-" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）J-型指令（跳转型）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-mipsrtl51" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 典型MIPS指令功能（RTL描述）（表5.1）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        四、数据通路的功能和基本结构
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="四、数据通路的功能和基本结构">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1-516" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 单周期数据通路（图5.16）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 单周期数据通路（图5.16）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）关键部件与控制信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_1" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）数据流向
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2-525" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多周期数据通路（图5.25）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 多周期数据通路（图5.25）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）核心特点
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）新增控制信号
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_2" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）状态转换
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        五、控制器的功能和工作原理
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="五、控制器的功能和工作原理">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 微程序控制器
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="1. 微程序控制器">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）基本思想
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#252" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）核心概念（表5.2）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3511" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （3）基本结构（图5.11）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （4）微指令编码方式
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 硬布线控制器（对比）
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_4" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        六、异常和中断机制
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="六、异常和中断机制">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 分类
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="2. 分类">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#153" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （1）异常分类（表5.3）
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_7" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        （2）中断分类
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#3_3" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        3. 处理过程
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_5" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        七、指令流水线（第六章先导）
+      
+    </span>
+  </a>
+  
+    <nav class="md-nav" aria-label="七、指令流水线（第六章先导）">
+      <ul class="md-nav__list">
+        
+          <li class="md-nav__item">
+  <a href="#1_9" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        1. 基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+          <li class="md-nav__item">
+  <a href="#2_8" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        2. 多处理器基本概念
+      
+    </span>
+  </a>
+  
+</li>
+        
+      </ul>
+    </nav>
+  
+</li>
+      
+        <li class="md-nav__item">
+  <a href="#_6" class="md-nav__link">
+    <span class="md-ellipsis">
+      
+        八、第五章核心考点汇总
+      
+    </span>
+  </a>
+  
+</li>
+      
+    </ul>
+  
+</nav>
+                  </div>
+                </div>
+              </div>
+            
+          
+          
+            <div class="md-content" data-md-component="content">
+              
+              <article class="md-content__inner md-typeset">
+                
+                  
+
+
+
+<h1 id="cpu">第五章 中央处理器（CPU）<a class="headerlink" href="#cpu" title="Permanent link">&para;</a></h1>
+<p><img alt="overview-6" src="../assets/jz-5-table.png" /></p>
+<h2 id="cpu_1">一、CPU的功能和基本结构<a class="headerlink" href="#cpu_1" title="Permanent link">&para;</a></h2>
+<h3 id="1">1. 核心功能<a class="headerlink" href="#1" title="Permanent link">&para;</a></h3>
+<ul>
+<li>指令控制：按顺序或跳转逻辑取出并执行指令</li>
+<li>操作控制：控制ALU、寄存器、存储器等部件执行微操作</li>
+<li>时间控制：同步各部件按时钟周期协调工作</li>
+<li>数据加工：通过ALU完成算术/逻辑运算</li>
+<li>异常与中断处理：响应内部异常和外部中断请求</li>
+</ul>
+<h3 id="2">2. 基本组成<a class="headerlink" href="#2" title="Permanent link">&para;</a></h3>
+<h4 id="1_1">（1）运算器（执行部件）<a class="headerlink" href="#1_1" title="Permanent link">&para;</a></h4>
+<p>核心功能：完成数据的算术/逻辑运算、数据存储与传输</p>
+<ul>
+<li>核心部件：算术逻辑单元（ALU）、寄存器组、移位寄存器、暂存寄存器</li>
+<li>关键寄存器（操作元件 vs 状态元件区别）：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>寄存器名称</th>
+<th>功能描述</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>操作元件</td>
+<td>通用寄存器组（GPRs）</td>
+<td>存放操作数、地址信息（如AX、BX、CX、DX、SP），指令需指定寄存器编号</td>
+</tr>
+<tr>
+<td>操作元件</td>
+<td>累加寄存器（ACC）</td>
+<td>暂存ALU运算结果</td>
+</tr>
+<tr>
+<td>操作元件</td>
+<td>移位寄存器（SR）</td>
+<td>存放操作数，支持左右移位操作</td>
+</tr>
+<tr>
+<td>操作元件</td>
+<td>暂存寄存器</td>
+<td>暂存总线/通用寄存器送来的操作数，供ALU运算（对程序员透明）</td>
+</tr>
+<tr>
+<td>状态元件</td>
+<td>程序状态字寄存器（PSW）</td>
+<td>保存运算/测试结果的状态信息（OF溢出、SF符号、ZF零、CF进位），每位对应一个触发器</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2_1">（2）控制器（控制部件）<a class="headerlink" href="#2_1" title="Permanent link">&para;</a></h4>
+<p>核心功能：生成控制信号，协调各部件按指令要求工作</p>
+<ul>
+<li>核心部件：指令寄存器（IR）、程序计数器（PC）、地址形成部件、控制逻辑</li>
+<li>关键寄存器：</li>
+</ul>
+<table>
+<thead>
+<tr>
+<th>寄存器名称</th>
+<th>功能描述</th>
+<th>命题考点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>程序计数器（PC）</td>
+<td>存放待执行指令的主存地址，按字节编址时位数=主存地址位数；顺序执行时PC+指令字节数，转移时由指令计算新值</td>
+<td>PC位数与主存空间、指令字长的关系</td>
+</tr>
+<tr>
+<td>指令寄存器（IR）</td>
+<td>保存当前正在执行的指令，位数=指令字长</td>
+<td>IR位数与指令字长的关系</td>
+</tr>
+<tr>
+<td>存储器地址寄存器（MAR）</td>
+<td>存放主存读写地址，位数=主存地址线数（决定最大寻址单元数）</td>
+<td>与MDR的功能区分</td>
+</tr>
+<tr>
+<td>存储器数据寄存器（MDR）</td>
+<td>存放主存读写数据，位数=存储字长</td>
+<td>与MAR的功能区分</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_1">二、指令执行过程<a class="headerlink" href="#_1" title="Permanent link">&para;</a></h2>
+<h3 id="1_2">1. 核心周期概念<a class="headerlink" href="#1_2" title="Permanent link">&para;</a></h3>
+<h4 id="1_3">（1）周期定义<a class="headerlink" href="#1_3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>指令周期：CPU取出并执行一条指令的全部时间（含取指、间址、执行、中断周期）</li>
+<li>机器周期：指令周期的基本单位（可定长/不定长），对应一次主存访问或ALU运算</li>
+<li>时钟周期：CPU的最小时间单位（主频的倒数），每个机器周期包含若干时钟周期</li>
+</ul>
+<h4 id="25253">（2）周期关系（图5.2、5.3）<a class="headerlink" href="#25253" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>周期类型</th>
+<th>适用场景</th>
+<th>结构示意图</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>定长机器周期</td>
+<td>指令执行步骤固定，如无间接寻址的简单指令</td>
+<td>指令周期 = 取指周期 + 执行周期（图5.2(a)）</td>
+</tr>
+<tr>
+<td>不定长机器周期</td>
+<td>指令执行步骤可变，如间接寻址指令需增加间址周期</td>
+<td>指令周期 = 取指周期 + 间址周期 + 执行周期（图5.2(b)）</td>
+</tr>
+<tr>
+<td>带中断周期</td>
+<td>支持中断机制时，指令执行结束后检测中断请求</td>
+<td>指令周期 = 取指周期 + 间址周期 + 执行周期 + 中断周期（图5.3）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3">（3）关键说明<a class="headerlink" href="#3" title="Permanent link">&para;</a></h4>
+<ul>
+<li>无条件转移指令（JMP）：仅含取指周期+执行周期（无需访存取操作数）</li>
+<li>间接寻址指令：需增加间址周期（取有效地址）</li>
+<li>中断周期：进栈操作是SP减1（堆栈向低地址增长），需关中断、保存断点、修改PC为中断服务程序入口</li>
+</ul>
+<h3 id="2_2">2. 指令执行流程（通用步骤）<a class="headerlink" href="#2_2" title="Permanent link">&para;</a></h3>
+<ol>
+<li><strong>取指周期</strong>：</li>
+<li>CPU根据PC内容访问主存，取出指令送入IR</li>
+<li>PC自动加1（按指令字节数），或转移时更新为目标地址</li>
+<li><strong>间址周期（可选）</strong>：</li>
+<li>若指令为间接寻址，根据IR中的地址字段访存，取出有效地址</li>
+<li><strong>执行周期</strong>：</li>
+<li>指令译码（IR输出操作码），生成控制信号</li>
+<li>取操作数（从寄存器或主存），送入ALU</li>
+<li>ALU执行运算，或完成访存、移位等操作</li>
+<li>保存结果（写入寄存器或主存）</li>
+<li><strong>中断周期（可选）</strong>：</li>
+<li>检测中断请求，若有则关中断、保存断点（PSW、PC）</li>
+<li>PC指向中断服务程序入口，转入中断处理</li>
+</ol>
+<h2 id="mips">三、MIPS指令格式与功能<a class="headerlink" href="#mips" title="Permanent link">&para;</a></h2>
+<h3 id="1-55">1. 指令格式（图5.5）<a class="headerlink" href="#1-55" title="Permanent link">&para;</a></h3>
+<h4 id="1r-">（1）R-型指令（寄存器型）<a class="headerlink" href="#1r-" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>31-26</th>
+<th>25-21</th>
+<th>20-16</th>
+<th>15-11</th>
+<th>10-6</th>
+<th>5-0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OP</td>
+<td>rs</td>
+<td>rt</td>
+<td>rd</td>
+<td>shamt</td>
+<td>func</td>
+</tr>
+<tr>
+<td>- 功能：寄存器之间的运算（如add、sub、slt）</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>- 关键字段：OP（操作码，6位，固定为0）、func（功能码，6位，区分具体运算）</td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="2i-">（2）I-型指令（立即数型）<a class="headerlink" href="#2i-" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>31-26</th>
+<th>25-21</th>
+<th>20-16</th>
+<th>15-0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OP</td>
+<td>rs</td>
+<td>rt</td>
+<td>imm16</td>
+</tr>
+<tr>
+<td>- 功能：寄存器与立即数运算、访存指令（如ori、addiu、lw、sw、beq）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+<tr>
+<td>- 关键字段：imm16（16位立即数，需符号扩展/零扩展）</td>
+<td></td>
+<td></td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h4 id="3j-">（3）J-型指令（跳转型）<a class="headerlink" href="#3j-" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>31-26</th>
+<th>25-0</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>OP</td>
+<td>target</td>
+</tr>
+<tr>
+<td>- 功能：无条件跳转（如j、jal）</td>
+<td></td>
+</tr>
+<tr>
+<td>- 关键字段：target（26位目标地址，与PC&lt;31:28&gt;拼接形成32位地址）</td>
+<td></td>
+</tr>
+</tbody>
+</table>
+<h3 id="2-mipsrtl51">2. 典型MIPS指令功能（RTL描述）（表5.1）<a class="headerlink" href="#2-mipsrtl51" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>指令</th>
+<th>功能描述（RTL）</th>
+<th>说明</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>add rd, rs, rt</td>
+<td>R[rd] ← R[rs] + R[rt]；溢出则异常</td>
+<td>带符号加法，溢出检测</td>
+</tr>
+<tr>
+<td>sub rd, rs, rt</td>
+<td>R[rd] ← R[rs] - R[rt]；溢出则异常</td>
+<td>带符号减法，溢出检测</td>
+</tr>
+<tr>
+<td>subu rd, rs, rt</td>
+<td>R[rd] ← R[rs] - R[rt]</td>
+<td>无符号减法，无溢出检测</td>
+</tr>
+<tr>
+<td>slt rd, rs, rt</td>
+<td>若R[rs] &lt; R[rt]（带符号），则R[rd]←1，否则←0</td>
+<td>带符号比较，无溢出检测</td>
+</tr>
+<tr>
+<td>sltu rd, rs, rt</td>
+<td>若R[rs] &lt; R[rt]（无符号），则R[rd]←1，否则←0</td>
+<td>无符号比较，无溢出检测</td>
+</tr>
+<tr>
+<td>ori rt, rs, imm16</td>
+<td>R[rt] ← R[rs] ∨ ZEXT(imm16)</td>
+<td>立即数零扩展，按位或</td>
+</tr>
+<tr>
+<td>addiu rt, rs, imm16</td>
+<td>R[rt] ← R[rs] + SEXT(imm16)</td>
+<td>立即数符号扩展，加法无溢出检测</td>
+</tr>
+<tr>
+<td>lw rt, rs, imm16</td>
+<td>Addr ← R[rs] + SEXT(imm16)；R[rt] ← M[Addr]</td>
+<td>加载指令，访存地址=基址+符号扩展立即数</td>
+</tr>
+<tr>
+<td>sw rt, rs, imm16</td>
+<td>Addr ← R[rs] + SEXT(imm16)；M[Addr] ← R[rt]</td>
+<td>存储指令，访存地址=基址+符号扩展立即数</td>
+</tr>
+<tr>
+<td>beq rs, rt, imm16</td>
+<td>Cond ← R[rs] - R[rt]；若Cond=0，PC←PC+4+SEXT(imm16)×4</td>
+<td>相等则跳转，相对寻址，位移量×4（字对齐）</td>
+</tr>
+<tr>
+<td>j target</td>
+<td>PC ← (PC&lt;31:28&gt; ∥ target&lt;25:0&gt; ∥ 00)</td>
+<td>绝对跳转，地址拼接（PC高4位+target+低2位00）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_2">四、数据通路的功能和基本结构<a class="headerlink" href="#_2" title="Permanent link">&para;</a></h2>
+<h3 id="1-516">1. 单周期数据通路（图5.16）<a class="headerlink" href="#1-516" title="Permanent link">&para;</a></h3>
+<h4 id="1_4">（1）核心特点<a class="headerlink" href="#1_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li>一条指令在一个时钟周期内完成，所有部件并行工作</li>
+<li>时钟周期=最长指令的执行时间（如lw指令，需访存+ALU运算）</li>
+</ul>
+<h4 id="2_3">（2）关键部件与控制信号<a class="headerlink" href="#2_3" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>部件</th>
+<th>功能描述</th>
+<th>控制信号（加粗为核心信号）</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>寄存器堆（Registers）</td>
+<td>存放通用寄存器，支持读写操作</td>
+<td><strong>RegWr</strong>（写使能：1=写）、<strong>RegDst</strong>（目的寄存器选择：1=Rd，0=Rt）</td>
+</tr>
+<tr>
+<td>ALU</td>
+<td>执行算术/逻辑运算</td>
+<td><strong>ALUctr</strong>（运算类型）、<strong>ALUSrc</strong>（B口来源：1=扩展器，0=寄存器）</td>
+</tr>
+<tr>
+<td>扩展器</td>
+<td>处理16位立即数（符号扩展/零扩展）</td>
+<td><strong>ExtOp</strong>（扩展方式：1=符号扩展，0=零扩展）</td>
+</tr>
+<tr>
+<td>数据存储器（Mem）</td>
+<td>存放数据，支持读写操作</td>
+<td><strong>MemWr</strong>（写使能：1=写）、<strong>MemtoReg</strong>（写回来源：1=Mem，0=ALU）</td>
+</tr>
+<tr>
+<td>取指部件</td>
+<td>从主存取出指令，更新PC</td>
+<td><strong>Branch</strong>（分支使能）、<strong>Jump</strong>（跳转使能）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3_1">（3）数据流向<a class="headerlink" href="#3_1" title="Permanent link">&para;</a></h4>
+<ul>
+<li>取指：PC→存储器→IR（指令），PC自动+4</li>
+<li>译码：IR输出rs、rt、rd→寄存器堆→busA、busB</li>
+<li>执行：busA/扩展器输出→ALU→运算结果</li>
+<li>写回：ALU结果/Mem数据→寄存器堆/主存</li>
+</ul>
+<h3 id="2-525">2. 多周期数据通路（图5.25）<a class="headerlink" href="#2-525" title="Permanent link">&para;</a></h3>
+<h4 id="1_5">（1）核心特点<a class="headerlink" href="#1_5" title="Permanent link">&para;</a></h4>
+<ul>
+<li>一条指令分为多个时钟周期完成，每个周期完成一个微操作</li>
+<li>时钟周期=最短微操作的时间，指令周期=多个时钟周期之和（按需分配）</li>
+</ul>
+<h4 id="2_4">（2）新增控制信号<a class="headerlink" href="#2_4" title="Permanent link">&para;</a></h4>
+<ul>
+<li><strong>PCWr</strong>（PC写使能）、<strong>PCWrCond</strong>（条件写PC：分支跳转时有效）</li>
+<li><strong>IRWr</strong>（IR写使能：取指时置1）、<strong>IorD</strong>（访存地址选择：1=ALU结果，0=PC）</li>
+<li><strong>PCSource</strong>（PC来源选择：分支目标/跳转目标/PC+4）</li>
+<li><strong>BrWr</strong>（分支条件写使能）</li>
+</ul>
+<h4 id="3_2">（3）状态转换<a class="headerlink" href="#3_2" title="Permanent link">&para;</a></h4>
+<ul>
+<li>每个时钟周期对应一个状态（如取指、译码、执行、访存、写回）</li>
+<li>状态转换由控制逻辑根据指令类型和运算结果决定（如beq指令需判断Zero信号）</li>
+</ul>
+<h2 id="_3">五、控制器的功能和工作原理<a class="headerlink" href="#_3" title="Permanent link">&para;</a></h2>
+<h3 id="1_6">1. 微程序控制器<a class="headerlink" href="#1_6" title="Permanent link">&para;</a></h3>
+<h4 id="1_7">（1）基本思想<a class="headerlink" href="#1_7" title="Permanent link">&para;</a></h4>
+<ul>
+<li>将每条机器指令转化为一段<strong>微程序</strong>（微指令的有序集合）</li>
+<li>微指令产生控制信号，控制部件执行微操作，实现指令功能</li>
+<li>本质：用软件方法设计硬件控制逻辑（微程序=硬件的“软件”）</li>
+</ul>
+<h4 id="252">（2）核心概念（表5.2）<a class="headerlink" href="#252" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>概念</th>
+<th>定义与说明</th>
+<th>命题考点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>微命令</td>
+<td>控制部件发出的最小控制信号（如RegWr、MemWr），与微操作一一对应</td>
+<td>相容性（可同时出现）、互斥性（不可同时出现）</td>
+</tr>
+<tr>
+<td>微指令</td>
+<td>若干微命令的集合，含<strong>操作控制字段</strong>（微命令）和<strong>顺序控制字段</strong>（下条微地址）</td>
+<td>微指令字长=操作控制字段位数+顺序控制字段位数</td>
+</tr>
+<tr>
+<td>微周期</td>
+<td>取出并执行一条微指令的时间（=时钟周期）</td>
+<td>与指令周期的关系：指令周期=微周期×微指令条数</td>
+</tr>
+<tr>
+<td>控制存储器（CM）</td>
+<td>存放微程序，CPU内部ROM实现</td>
+<td>与主存的区别（2017）：主存存程序/数据（外部RAM），CM存微程序（内部ROM）</td>
+</tr>
+<tr>
+<td>微程序</td>
+<td>实现一条机器指令的微指令序列</td>
+<td>与程序的区别：程序是指令集合（用户编写），微程序是微指令集合（设计者编写，透明）</td>
+</tr>
+</tbody>
+</table>
+<h4 id="3511">（3）基本结构（图5.11）<a class="headerlink" href="#3511" title="Permanent link">&para;</a></h4>
+<ul>
+<li>核心部件：控制存储器（CM）、微指令寄存器（μIR）、微地址形成部件、微程序计数器（μPC）</li>
+<li>工作流程：</li>
+<li>取指微程序：μPC→CM→μIR→取指微操作（PC→主存→IR）</li>
+<li>指令译码：IR的OP字段→微地址形成部件→微程序入口地址</li>
+<li>执行微程序：逐条取出微指令→产生控制信号→执行微操作</li>
+<li>循环：一条指令执行完后，返回取指微程序入口</li>
+</ul>
+<h4 id="4">（4）微指令编码方式<a class="headerlink" href="#4" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>编码类型</th>
+<th>格式（图5.14、5.15）</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>水平型微指令</td>
+<td>操作控制字段（多位，1位对应1个微命令）+顺序控制字段</td>
+<td>并行能力强、微程序短、执行速度快</td>
+<td>微指令长、编写复杂</td>
+</tr>
+<tr>
+<td>垂直型微指令</td>
+<td>微操作码（OP）+源地址+目的地址</td>
+<td>微指令短、规整、编写简单</td>
+<td>并行能力弱、微程序长、执行速度慢</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2_5">2. 硬布线控制器（对比）<a class="headerlink" href="#2_5" title="Permanent link">&para;</a></h3>
+<ul>
+<li>基本思想：用组合逻辑电路（与或非门）直接产生控制信号</li>
+<li>特点：速度快（无微程序查表延迟）、设计复杂（需手工优化）、灵活性差（修改需改硬件）</li>
+<li>与微程序控制器对比：硬布线适合RISC（指令少、规整），微程序适合CISC（指令多、复杂）</li>
+</ul>
+<h2 id="_4">六、异常和中断机制<a class="headerlink" href="#_4" title="Permanent link">&para;</a></h2>
+<h3 id="1_8">1. 基本概念<a class="headerlink" href="#1_8" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>定义与触发源</th>
+<th>核心区别</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>异常（内中断）</td>
+<td>CPU内部产生的同步事件（与当前指令相关）</td>
+<td>检测由CPU自身完成，如溢出、缺页、非法指令</td>
+</tr>
+<tr>
+<td>中断（外中断）</td>
+<td>外部设备产生的异步事件（与当前指令无关）</td>
+<td>需通过中断请求线（INTR/NMI）通知CPU，如键盘输入、打印机缺纸</td>
+</tr>
+</tbody>
+</table>
+<h3 id="2_6">2. 分类<a class="headerlink" href="#2_6" title="Permanent link">&para;</a></h3>
+<h4 id="153">（1）异常分类（表5.3）<a class="headerlink" href="#153" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>定义与示例</th>
+<th>断点处理</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>故障（Fault）</td>
+<td>指令执行中检测到的可恢复事件（如缺页、除数为0、非法操作码）</td>
+<td>可恢复（如缺页）→ 返回故障指令重新执行；不可恢复（如除数为0）→ 终止进程</td>
+</tr>
+<tr>
+<td>自陷（Trap）</td>
+<td>预先安排的事件（如断点、系统调用、单步跟踪）</td>
+<td>执行完自陷指令后，返回下一条指令（转移指令返回目标指令）</td>
+</tr>
+<tr>
+<td>终止（Abort）</td>
+<td>硬件故障（如存储器校验错、总线错误），无法继续执行</td>
+<td>终止进程，重启系统</td>
+</tr>
+</tbody>
+</table>
+<h4 id="2_7">（2）中断分类<a class="headerlink" href="#2_7" title="Permanent link">&para;</a></h4>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>触发方式</th>
+<th>处理优先级</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>可屏蔽中断（INTR）</td>
+<td>外部设备通过INTR线请求，可通过屏蔽字关闭</td>
+<td>低（如打印机中断）</td>
+</tr>
+<tr>
+<td>不可屏蔽中断（NMI）</td>
+<td>紧急硬件故障（如电源掉电），不可屏蔽</td>
+<td>高（必须立即处理）</td>
+</tr>
+</tbody>
+</table>
+<h3 id="3_3">3. 处理过程<a class="headerlink" href="#3_3" title="Permanent link">&para;</a></h3>
+<ol>
+<li>检测请求：CPU在指令执行结束后（中断）或执行中（异常）检测请求</li>
+<li>响应请求：关中断（避免嵌套）、保存断点（PC、PSW）</li>
+<li>转入处理：PC指向异常/中断服务程序入口</li>
+<li>执行服务程序：处理故障（如缺页调页）、完成I/O操作等</li>
+<li>恢复返回：恢复断点（PC、PSW）、开中断、返回原程序</li>
+</ol>
+<h2 id="_5">七、指令流水线（第六章先导）<a class="headerlink" href="#_5" title="Permanent link">&para;</a></h2>
+<h3 id="1_9">1. 基本概念<a class="headerlink" href="#1_9" title="Permanent link">&para;</a></h3>
+<ul>
+<li>核心思想：将指令执行过程拆分为多个独立功能段，多指令重叠执行（类似工厂流水线）</li>
+<li>优点：提高指令吞吐率（单位时间执行的指令数），降低CPI（平均每条指令的时钟周期数）</li>
+</ul>
+<h3 id="2_8">2. 多处理器基本概念<a class="headerlink" href="#2_8" title="Permanent link">&para;</a></h3>
+<table>
+<thead>
+<tr>
+<th>类型</th>
+<th>定义与示例</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>SISD（单指令流单数据流）</td>
+<td>单CPU执行一条指令，处理一个数据（如早期单片机）</td>
+</tr>
+<tr>
+<td>SIMD（单指令流多数据流）</td>
+<td>单CPU执行一条指令，处理多个数据（如向量处理器、GPU）</td>
+</tr>
+<tr>
+<td>MIMD（多指令流多数据流）</td>
+<td>多CPU并行执行多条指令，处理多个数据（如多核处理器、服务器集群）</td>
+</tr>
+<tr>
+<td>多核处理器（Multi-core）</td>
+<td>单芯片集成多个独立CPU核心，共享L2/L3 Cache，支持并行执行</td>
+</tr>
+<tr>
+<td>共享内存多处理器（SMP）</td>
+<td>多个CPU核心共享主存，通过总线通信（如桌面多核CPU）</td>
+</tr>
+<tr>
+<td>硬件多线程</td>
+<td>单个CPU核心支持多个线程并行执行（如超线程技术，HT）</td>
+</tr>
+</tbody>
+</table>
+<h2 id="_6">八、第五章核心考点汇总<a class="headerlink" href="#_6" title="Permanent link">&para;</a></h2>
+<ol>
+<li><strong>基本概念类</strong>：CPU组成（运算器/控制器寄存器）、指令周期/机器周期/时钟周期的关系、异常与中断的区别</li>
+<li><strong>原理与计算类</strong>：MIPS指令格式与地址转换、单/多周期数据通路的控制信号取值、微程序控制器的工作流程</li>
+<li><strong>设计与对比类</strong>：硬布线与微程序控制器的区别、水平型与垂直型微指令的对比、异常/中断的分类与处理</li>
+<li><strong>命题高频点</strong>：PC/IR的位数关系、主存与控制存储器的区别、自陷的性质、异常响应时机</li>
+</ol>
+<hr />
+
+
+
+
+
+
+
+
+
+
+
+
+                
+              </article>
+            </div>
+          
+          
+<script>var target=document.getElementById(location.hash.slice(1));target&&target.name&&(target.checked=target.name.startsWith("__tabbed_"))</script>
+        </div>
+        
+      </main>
+      
+        <script async src="//busuanzi.ibruce.info/busuanzi/2.3/busuanzi.pure.mini.js"></script>
+<div id="utterances_container">
+  <script src="https://utteranc.es/client.js"
+    repo="MaxizYB/NJU-ISE-24"
+    issue-term="pathname"
+    label="comment"
+    theme="github-light"
+    crossorigin="anonymous"
+    async>
+  </script>
+</div>
+<div style="text-align: center; margin-top: 20px; padding: 10px;">
+  <div style="display: flex; justify-content: center; gap: 30px; font-size: 13px;">
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>本站访问量：<span id="busuanzi_value_site_pv" style="font-weight: bold; color: #0366d6;"></span>
+    </span>
+    <span style="color: #24292e;">
+      <i style="margin-right: 5px;"></i>访客数：<span id="busuanzi_value_site_uv" style="font-weight: bold; color: #28a745;"></span>
+    </span>
+  </div>
+</div>
+      
+    </div>
+    <div class="md-dialog" data-md-component="dialog">
+      <div class="md-dialog__inner md-typeset"></div>
+    </div>
+    
+    
+    
+      
+      
+      <script id="__config" type="application/json">{"annotate": null, "base": "..", "features": ["navigation.instant", "navigation.tabs"], "search": "../assets/javascripts/workers/search.2c215733.min.js", "tags": null, "translations": {"clipboard.copied": "Copied to clipboard", "clipboard.copy": "Copy to clipboard", "search.result.more.one": "1 more on this page", "search.result.more.other": "# more on this page", "search.result.none": "No matching documents", "search.result.one": "1 matching document", "search.result.other": "# matching documents", "search.result.placeholder": "Type to start searching", "search.result.term.missing": "Missing", "select.version": "Select version"}, "version": null}</script>
+    
+    
+      <script src="../assets/javascripts/bundle.79ae519e.min.js"></script>
+      
+        <script src="https://utteranc.es/client.js"></script>
+      
+        <script src="https://cdn.jsdelivr.net/npm/mathjax@2/MathJax.js?config=TeX-AMS-MML_HTMLorMML"></script>
+      
+    
+  </body>
+</html>
