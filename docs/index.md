@@ -10,8 +10,12 @@
 
 总之，欢迎大家参与到知识库的建设！
 
-## leetcode每周练习打卡活动（正在进行）
+## leetcode每周练习打卡活动 （暂停）
 
 [活动主页](https://maxizyb.github.io/NJU-ISE-24/lc-overview/)
+
+## 课程资源
+
+[链接](https://maxizyb.github.io/NJU-ISE-24/jz-overview/)
 
 **希望这个仓库可以帮助到你~**
